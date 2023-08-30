@@ -1,0 +1,104 @@
+/* font-family: 'Gilroy-Bold', sans-serif;
+font-family: 'Gilroy-Heavy', sans-serif;
+font-family: 'Gilroy-Light', sans-serif;
+font-family: 'Gilroy-Medium', sans-serif;
+font-family: 'Gilroy-Regular', sans-serif; */
+
+
+body {
+    background: #191919;
+    margin: 0px;
+    font-family: 'Gilroy-Regular', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 72px;
+}
+.header__menu {
+    display: flex;
+}
+.header__menu-link {
+    align-items: center;
+    display: flex;
+    padding-right: 60px;
+}
+.header__menu-link a{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding-left: 70px;
+    font-size: 20px;
+    font-weight: 250;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+.header__menu-buttons {
+    display: flex;
+    align-items: center;
+}
+.header__menu-button {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-decoration: none;
+    border: 2px solid #6E55C4;
+    color: #6E55C4;
+    padding: 16px 47px 15px 46px;
+    margin: 0px 30px 0px 60px;
+}
+.main__img{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+.main__img-1{
+    width: 24%;
+    height: 60vh;
+    background: url(./images/main-mini1.png) no-repeat;
+    background-size: cover;
+    transition: 2s ease;
+}
+.main__img-1:hover{
+    width: 77%;
+    transition: 2s ease;
+    background: url(./images/main1.jpg) no-repeat center;
+    background-size: cover;
+}
+.main__img-1:hover ~ .main__img-2 ,.main__img-1:hover ~ .main__img-3 ,.main__img-1:hover ~ .main__img-4{
+    width: 7%;
+    transition: 2s;
+    transition: 2s ease;
+}
+.main__img-2{
+    width: 24%;
+    height: 60vh;
+    background: url(./images/main-mini1.png) no-repeat;
+    background-size: cover;
+}
+.main__img-3{
+    width: 24%;
+    height: 60vh;
+    background: url(./images/main-mini1.png) no-repeat;
+    background-size: cover;
+}
+.main__img-4{
+    width: 24%;
+    height: 60vh;
+    background: url(./images/main-mini1.png) no-repeat;
+    background-size: cover;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 72px;
+}
+.footer__info-text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFFFFF59;
+    opacity: 0.35;
+}
