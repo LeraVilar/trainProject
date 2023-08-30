@@ -9,6 +9,9 @@ body {
     background: #191919;
     margin: 0px;
     font-family: 'Gilroy-Regular', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 header {
     display: flex;
@@ -46,6 +49,9 @@ header {
     color: #6E55C4;
     padding: 16px 47px 15px 46px;
     margin: 0px 30px 0px 60px;
+}
+main{
+    flex-grow: 1;
 }
 .main__img{
     display: flex;
@@ -92,6 +98,7 @@ footer{
     display: flex;
     justify-content: space-between;
     padding: 26px 72px;
+    flex-shrink: 0;
 }
 .footer__info-text {
     display: flex;
@@ -101,4 +108,39 @@ footer{
     font-weight: 600;
     color: #FFFFFF59;
     opacity: 0.35;
+}
+.footer__menu {
+    display: flex;
+}
+.footer__menu-link {
+    align-items: center;
+    display: flex;
+    padding-right: 60px;
+}
+.footer__menu-link a{
+    color: #FFFFFF;
+    text-decoration: none;
+    padding-left: 70px;
+    font-size: 20px;
+    font-weight: 250;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+.footer__menu-buttons {
+    display: flex;
+    align-items: center;
+}
+.footer__menu-button {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-decoration: none;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    padding: 16px 47px 15px 46px;
+    margin: 0px 30px 0px 60px;
+}
+.footer__menu-buttons img {
+    padding: 0px 15px;
 }
