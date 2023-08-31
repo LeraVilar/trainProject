@@ -70,17 +70,6 @@ logo {
     background-size: cover;
     transition: 2s ease;
 }
-.main__img-1:hover{
-    width: 77%;
-    transition: 2s ease;
-    background: url(./images/main1.jpg) no-repeat center;
-    background-size: cover;
-}
-.main__img-1:hover ~ .main__img-2 ,.main__img-1:hover ~ .main__img-3 ,.main__img-1:hover ~ .main__img-4{
-    width: 7%;
-    transition: 2s;
-    transition: 2s ease;
-}
 .main__img-2{
     width: 24%;
     height: 60vh;
@@ -98,6 +87,50 @@ logo {
     height: 60vh;
     background: url(./images/main-mini1.png) no-repeat;
     background-size: cover;
+}
+.main__img-1:hover{
+    width: 77%;
+    transition: 2s ease;
+    background: url(./images/main1.jpg) no-repeat center;
+    background-size: cover;
+}
+.main__img-2:hover{
+    width: 77%;
+    transition: 2s ease;
+    background: url(./images/main1.jpg) no-repeat center;
+    background-size: cover;
+}
+.main__img-3:hover{
+    width: 77%;
+    transition: 2s ease;
+    background: url(./images/main1.jpg) no-repeat center;
+    background-size: cover;
+}
+.main__img-4:hover{
+    width: 77%;
+    transition: 2s ease;
+    background: url(./images/main1.jpg) no-repeat center;
+    background-size: cover;
+}
+.main__img-1:hover ~ .main__img-2 ,.main__img-1:hover ~ .main__img-3 ,.main__img-1:hover ~ .main__img-4{
+    width: 7%;
+    transition: 2s;
+    transition: 2s ease-in;
+}
+.main__img-2:hover ~ .main__img-1 ,.main__img-2:hover ~ .main__img-3 ,.main__img-2:hover ~ .main__img-4{
+    width: 7% !important;
+    transition: 2s;
+    transition: 2s ease-in;
+}
+.main__img-3:hover ~ .main__img-1 ,.main__img-3:hover ~ .main__img-2 ,.main__img-3:hover ~ .main__img-4{
+    width: 7%;
+    transition: 2s;
+    transition: 2s ease-in;
+}
+.main__img-4:hover ~ .main__img-1 ,.main__img-4:hover ~ .main__img-3 ,.main__img-4:hover ~ .main__img-3{
+    width: 7%;
+    transition: 2s;
+    transition: 2s ease-in;
 }
 .main__pages-homes {
     display: flex;
@@ -123,6 +156,12 @@ logo {
     background-size: cover;
     background-attachment: fixed;
 }
+.main__pages-service{
+    background: url(./images/parts-img4.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .main__pages-homes-title {
     font-size: 160px;
     font-weight: 300;
@@ -159,6 +198,10 @@ logo {
 }
 .diagnosti{
     background: url(./images/parts-img1.3.png) no-repeat;
+    background-size: cover;
+}
+.service{
+    background: url(./images/parts-img1.4.png) no-repeat;
     background-size: cover;
 }
 .main__pages-info_content {
