@@ -183,7 +183,7 @@ logo {
 } */
 .main__pages-homes_info {
     color: #fff;
-    padding: 160px 145px;
+    padding: 160px 68px;
     background-size: cover;
     display: flex;
     justify-content: space-between;
@@ -309,5 +309,89 @@ footer{
     }
     .footer__menu-button {
         font-size: 20px;
+    }
+}
+@media (max-width:1550px){
+    header {
+        padding: 26px 34px;
+    }
+    logo img {
+        height: 40px;
+    }
+    .header__menu-button {
+        font-size: 15px;
+        padding: 10px 30px;
+        margin: 0px 20px 0px 0px;
+    }
+    .header__menu-link a {
+        font-size: 14px;
+        padding-left: 50px;
+    }
+    .main__pages-homes_info{
+        align-items: center;
+    }
+    .header__menu-buttons img {
+        height: 38px;
+    }
+    .main__pages-homes-title {
+        font-size: 65px;
+    }
+    .main__pages-homesWrapper {
+        padding-bottom: 160px;
+    }
+    .main__pages-info_content {
+        width: 40%;
+    }
+    .main__pages-info_contentText {
+        font-size: 24px;
+    }
+    .main__pages-info_images {
+        width: 50%;
+    }
+
+
+
+
+    .footer__info-img img {
+        height: 50px;
+    }
+    .footer__info-text {
+        font-size: 7px;
+    }
+    .footer__menu-link {
+        padding-right: 20px;
+    }   
+    .footer__menu-link a {
+        font-size: 14px;
+        padding-left: 30px;
+    }
+    .footer__menu-button {
+        font-size: 14px;
+        padding: 10px 30px;
+        margin: 0px 0px 0px 10px;
+    }
+    .footer__menu-buttons img {
+        height: 40px;
+        width: auto;
+        padding: 0px 6px;
+    }  
+}
+@media (max-width:990px){
+    .main__pages-homes_info {
+        flex-direction: column;
+        padding: 90px 70px 50px 70px;
+    }
+    .main__pages-info_content {
+        width: 100%;
+    }
+    .main__pages-info_images {
+        width: 100%;
+        padding-top: 95px;
+    }
+    .footer__menu-button-img {
+        display: none;
+    }
+    .footer__menu-button{
+        border: none;
     }
 }
