@@ -35,7 +35,7 @@ logo {
     color: #FFFFFF;
     text-decoration: none;
     padding-left: 70px;
-    font-size: 20px;
+    font-size: 40px;
     font-weight: 250;
     line-height: 24px;
     letter-spacing: 0em;
@@ -45,7 +45,7 @@ logo {
     align-items: center;
 }
 .header__menu-button {
-    font-size: 20px;
+    font-size: 40px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0em;
@@ -105,32 +105,61 @@ logo {
     align-items: center;
     padding: 0px 70px;
     flex-grow: 1;
-    justify-content: end;
+    justify-content: end;  
+    min-height: 90vh;
+}
+.main__pages-parts{
     background: url(./images/parts-img1.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-    min-height: 90vh;
+}
+.main__pages-bigrepair{
+    background: url(./images/parts-img2.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.main__pages-diagnosti{
+    background: url(./images/parts-img3.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .main__pages-homes-title {
-    font-size: 80px;
+    font-size: 160px;
     font-weight: 300;
-    line-height: 96px;
+    line-height: 150px;
     letter-spacing: 0em;
     color: #fff;
-    width: 100%;
-    font-family: 'Gilroy-Light', sans-serif
+    display: flex;
+    width: 40%;
+    font-family: 'Gilroy-Light', sans-serif;
+    text-transform: uppercase;
 }
-img.main__pages-homes-img {
+.main__pages-homesWrapper {
+    width: 100%;
+    padding-bottom: 180px;
+}
+/* img.main__pages-homes-img {
     padding-top: 50px;
     padding-bottom: 80px;
-}
+} */
 .main__pages-homes_info {
     color: #fff;
     padding: 160px 145px;
-    background: url(./images/parts-img1.1.png) no-repeat;
     background-size: cover;
     display: flex;
     justify-content: space-between;
+}
+.parts{
+    background: url(./images/parts-img1.1.png) no-repeat;
+    background-size: cover;
+}
+.bigrepair{
+    background: url(./images/parts-img1.2.png) no-repeat;
+    background-size: cover;
+}
+.diagnosti{
+    background: url(./images/parts-img1.3.png) no-repeat;
+    background-size: cover;
 }
 .main__pages-info_content {
     width: 45%;
@@ -138,7 +167,7 @@ img.main__pages-homes-img {
 .main__pages-info_contentText {
     display: flex;
     flex-direction: column;
-    font-size: 28px;
+    font-size: 56px;
     font-weight: 300;
     line-height: 34px;
     letter-spacing: 0em;
@@ -175,7 +204,7 @@ footer{
     display: flex;
     flex-direction: column;
     padding-top: 15px;
-    font-size: 15px;
+    font-size: 30px;
     font-weight: 600;
     color: #FFFFFF59;
     opacity: 0.35;
@@ -192,7 +221,7 @@ footer{
     color: #FFFFFF;
     text-decoration: none;
     padding-left: 70px;
-    font-size: 20px;
+    font-size: 40px;
     font-weight: 250;
     line-height: 24px;
     letter-spacing: 0em;
@@ -202,7 +231,7 @@ footer{
     align-items: center;
 }
 .footer__menu-button {
-    font-size: 20px;
+    font-size: 40px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0em;
@@ -214,4 +243,28 @@ footer{
 }
 .footer__menu-buttons img {
     padding: 0px 15px;
+}
+@media (max-width:1950px){
+    .header__menu-link a{
+        font-size: 20px;
+    }
+    .header__menu-button {
+        font-size: 20px;
+    }
+    .main__pages-homes-title {
+        font-size: 80px;
+        line-height: 96px;
+    }
+    .main__pages-info_contentText {
+        font-size: 28px;
+    }
+    .footer__info-text {
+        font-size: 15px;
+    }
+    .footer__menu-link a{
+        font-size: 20px;
+    }
+    .footer__menu-button {
+        font-size: 20px;
+    }
 }
