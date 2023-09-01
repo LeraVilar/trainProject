@@ -249,7 +249,6 @@ span.main__pages-info_text {
     display: flex;
     justify-content: space-between;
     color: #fff;
-    max-height: 1380px;
     gap: 20px;
     padding: 50px 0px;
 }
