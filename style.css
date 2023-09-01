@@ -233,7 +233,86 @@ span.main__pages-info_text {
 .main__pages-info_images img{
     width: 100%;
 }
+.contact__team-title{
+    font-family: 'Gilroy-Light', sans-serif;
+    font-size: 64px;
+    font-weight: 300;
+    line-height: 74px;
+    letter-spacing: 0em;
+    text-align: left;
 
+}
+.contact__team-title {
+    font-family: 'Gilroy-Light', sans-serif;
+    font-size: 64px;
+    font-weight: 300;
+    line-height: 74px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    padding: 50px 70px;
+}
+.contact__team-block {
+    padding: 40px 70px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.contact__team-items {
+    width: 20%;
+}
+img.contact__team-item_img {
+    width: 100%;
+    transform: rotate(3deg);
+    opacity: .5;
+    transition: .5s;
+}
+.contact__team-textLink {
+    display: flex;
+}
+.contact__team-text {
+    padding: 50px 10px 70px;
+    position: relative;
+    top: -200px;
+    background: none;
+    transition: .5s;
+    width: 260px;
+}
+.contact__team-textTitle {
+    font-size: 24px;
+    font-weight: 250;
+    line-height: 29px;
+    border-bottom: 1px solid #fff;
+}
+.contact__team-textLink {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+}
+.contact__team-textLink a{
+    color: #fff;
+    text-decoration: none;
+}
+.contact__team-items:hover img.contact__team-item_img{
+    opacity: 1;
+    transition: .5s;
+    transform: rotate(0deg);
+}
+.contact__team-items:hover .contact__team-text {
+    background: #D9D9D9;
+    border-radius: 20px;
+    color: #000;
+    transform: translateX(80px) rotate(6deg);
+    width: 260px;
+    transition: .5s;
+}
+.contact__team-items:hover .contact__team-text a{
+    color: #000;
+    transition: .5s;
+}
+.contact__team-items:hover .contact__team-textTitle{
+    border-bottom: 1px solid #000; 
+}
 
 
 
@@ -244,6 +323,7 @@ footer{
     flex-shrink: 0;
 }
 .footer__info-text {
+    font-family: 'Gilroy-Bold', sans-serif;
     display: flex;
     flex-direction: column;
     padding-top: 15px;
@@ -272,6 +352,7 @@ footer{
 .footer__menu-buttons {
     display: flex;
     align-items: center;
+    padding-left: 20px;
 }
 .footer__menu-button {
     font-size: 40px;
@@ -282,11 +363,12 @@ footer{
     border: 2px solid #FFFFFF;
     color: #FFFFFF;
     padding: 16px 47px 15px 46px;
-    margin: 0px 30px 0px 60px;
+    margin: 0px 30px 0px 30px;
 }
-.footer__menu-buttons img {
+a.footer__menu-button-img {
     padding: 0px 15px;
 }
+
 @media (max-width:1950px){
     .header__menu-link a{
         font-size: 20px;
