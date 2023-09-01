@@ -410,10 +410,23 @@ footer{
         width: 100%;
         padding-top: 95px;
     }
+    .footer__menu-link {
+        padding-right: 0px;
+        display: grid;
+        grid-template-columns: auto auto;
+        
+    }
+    .footer__menu-link a{
+        opacity: 54%;
+    }
     .footer__menu-button-img {
         display: none;
     }
     .footer__menu-button{
         border: none;
+        opacity: 1;
+    }
+    a.footer__menu-button {
+        opacity: 1;
     }
 }
