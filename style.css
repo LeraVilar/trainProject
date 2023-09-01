@@ -283,8 +283,9 @@ img.contact__team-item_img {
     transition: 2s;
 }
 .contact__team-textLink {
-    padding-top: 30px;
+    padding-top: 15px;
     transition: 2s;
+    font-size: 40px;
 }
 .contact__team-textLink a{
     padding-top: 5px;
@@ -456,6 +457,9 @@ a.footer__menu-button-img {
         font-size: 24px;
         line-height: 20px;
     }
+    .contact__team-textLink {
+        font-size: 20px;
+    }
     .contact__contact-link{
         font-size: 25px;
         line-height: 28px;
@@ -472,10 +476,7 @@ a.footer__menu-button-img {
         font-size: 64px;
         line-height: 64px;
     }
-    .contact__team-textLink {
-        padding-top: 15px;
-        transition: 2s;
-    }
+    
 }
 @media (max-width:1550px){
     header {
