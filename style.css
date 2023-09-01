@@ -348,7 +348,26 @@ footer{
     .main__pages-info_images {
         width: 50%;
     }
-
+    .main__pages-parts{
+        background: url(./images/parts-imgAdapt1.jpg) no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .main__pages-bigrepair{
+        background: url(./images/parts-imgAdapt2.jpg) no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .main__pages-diagnosti{
+        background: url(./images/parts-imgAdapt3.jpg) no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .main__pages-service{
+        background: url(./images/parts-imgAdapt4.jpg) no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
 
 
 
