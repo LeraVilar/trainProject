@@ -268,8 +268,8 @@ img.contact__team-item_img {
 }
 .contact__team-text {
     padding: 50px 10px 70px;
-    position: relative;
-    top: -200px;
+    position: absolute;
+    bottom: 30px;
     background: none;
     transition: 2s;
     width: 80%;
