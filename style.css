@@ -269,6 +269,7 @@ img.contact__team-item_img {
 }
 .contact__team-textLink {
     display: flex;
+    flex-direction: column;
 }
 .contact__team-text {
     padding: 50px 10px 70px;
@@ -283,35 +284,49 @@ img.contact__team-item_img {
     font-weight: 250;
     line-height: 29px;
     border-bottom: 1px solid #fff;
+    transition: .5s;
 }
 .contact__team-textLink {
-    display: flex;
-    flex-direction: column;
     padding-top: 15px;
+    transition: .5s;
+}
+.contact__team-textLink a{
+    padding-top: 5px;
+    display: none;
+    color: #fff;
+    transition: .5s;
 }
 .contact__team-textLink a{
     color: #fff;
     text-decoration: none;
+    transition: .5s;
 }
 .contact__team-items:hover img.contact__team-item_img{
     opacity: 1;
     transition: .5s;
-    transform: rotate(0deg);
+    transform: translateY(-30px) rotate(0deg);
 }
 .contact__team-items:hover .contact__team-text {
     background: #D9D9D9;
     border-radius: 20px;
     color: #000;
-    transform: translateX(80px) rotate(6deg);
+    transform: translateY(30px) translateX(80px) rotate(6deg);
     width: 260px;
-    transition: .5s;
-}
-.contact__team-items:hover .contact__team-text a{
-    color: #000;
     transition: .5s;
 }
 .contact__team-items:hover .contact__team-textTitle{
     border-bottom: 1px solid #000; 
+}
+.contact__team-items:hover .contact__team-textLink{
+    display: flex;
+    flex-direction: column;
+    transition: .5s;
+}
+.contact__team-items:hover .contact__team-textLink a{
+    display: flex;
+    flex-direction: column;
+    transition: .5s;
+    color: #000;
 }
 
 
