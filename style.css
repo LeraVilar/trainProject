@@ -233,39 +233,34 @@ span.main__pages-info_text {
 .main__pages-info_images img{
     width: 100%;
 }
+.main__contact{
+    padding: 0px 70px;
+}
 .contact__team-title{
     font-family: 'Gilroy-Light', sans-serif;
-    font-size: 64px;
+    font-size: 128px;
     font-weight: 300;
-    line-height: 74px;
-    letter-spacing: 0em;
-    text-align: left;
-
-}
-.contact__team-title {
-    font-family: 'Gilroy-Light', sans-serif;
-    font-size: 64px;
-    font-weight: 300;
-    line-height: 74px;
+    line-height: 128px;
     letter-spacing: 0em;
     text-align: left;
     color: #fff;
-    padding: 50px 70px;
 }
 .contact__team-block {
-    padding: 40px 70px;
     display: flex;
     justify-content: space-between;
     color: #fff;
+    max-height: 1380px;
+    gap: 20px;
+    padding: 50px 0px;
 }
-.contact__team-items {
-    width: 20%;
-}
+/* .contact__team-items {
+    width: 25% !important;
+} */
 img.contact__team-item_img {
     width: 100%;
     transform: rotate(3deg);
     opacity: .5;
-    transition: .5s;
+    transition: 2s;
 }
 .contact__team-textLink {
     display: flex;
@@ -276,34 +271,35 @@ img.contact__team-item_img {
     position: relative;
     top: -200px;
     background: none;
-    transition: .5s;
-    width: 260px;
+    transition: 2s;
+    width: 80%;
+    border-radius: 20px;
 }
 .contact__team-textTitle {
-    font-size: 24px;
+    font-size: 48px;
     font-weight: 250;
     line-height: 29px;
     border-bottom: 1px solid #fff;
-    transition: .5s;
+    transition: 2s;
 }
 .contact__team-textLink {
-    padding-top: 15px;
-    transition: .5s;
+    padding-top: 30px;
+    transition: 2s;
 }
 .contact__team-textLink a{
     padding-top: 5px;
     display: none;
     color: #fff;
-    transition: .5s;
+    transition: 2s;
 }
 .contact__team-textLink a{
     color: #fff;
     text-decoration: none;
-    transition: .5s;
+    transition: 2s;
 }
 .contact__team-items:hover img.contact__team-item_img{
     opacity: 1;
-    transition: .5s;
+    transition: 2s;
     transform: translateY(-30px) rotate(0deg);
 }
 .contact__team-items:hover .contact__team-text {
@@ -311,8 +307,8 @@ img.contact__team-item_img {
     border-radius: 20px;
     color: #000;
     transform: translateY(30px) translateX(80px) rotate(6deg);
-    width: 260px;
-    transition: .5s;
+    width: 80%;
+    transition: 2s;
 }
 .contact__team-items:hover .contact__team-textTitle{
     border-bottom: 1px solid #000; 
@@ -320,14 +316,57 @@ img.contact__team-item_img {
 .contact__team-items:hover .contact__team-textLink{
     display: flex;
     flex-direction: column;
-    transition: .5s;
+    transition: 2s;
 }
 .contact__team-items:hover .contact__team-textLink a{
     display: flex;
     flex-direction: column;
-    transition: .5s;
+    transition: 2s;
     color: #000;
 }
+.contact__contact {
+}
+.contact__contact-title {
+    font-family: 'Gilroy-Light', sans-serif;
+    font-size: 128px;
+    font-weight: 300;
+    line-height: 128px;
+    color: #6E55C4;
+}
+.contact__contact-link{
+    font-family: 'Gilroy-Light', sans-serif;
+    font-size: 50px;
+    font-weight: 250;
+    line-height: 50px;
+    font-weight: 200;
+    color: #FFFFFF;
+}
+.contact__contact-link {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px;
+}
+.contact__contact-link a{
+    color: #FFFFFF;
+}
+.contact__contact-adress {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gilroy-Light', sans-serif;
+    font-size: 50px;
+    font-weight: 250;
+    line-height: 50px;
+    font-weight: 200;
+    color: #FFFFFF;
+}
+.contact__contact-social {
+    padding-top: 60px;
+}
+.contact__contact-social img{
+    padding-right: 25px;
+}
+
+
 
 
 
@@ -387,9 +426,11 @@ a.footer__menu-button-img {
 @media (max-width:1950px){
     .header__menu-link a{
         font-size: 20px;
+        
     }
     .header__menu-button {
         font-size: 20px;
+        line-height: 20px;
     }
     .main__pages-homes-title {
         font-size: 80px;
@@ -397,15 +438,43 @@ a.footer__menu-button-img {
     }
     .main__pages-info_contentText {
         font-size: 28px;
+        line-height: 28px;
     }
     .footer__info-text {
         font-size: 15px;
+        line-height: 15px;
     }
     .footer__menu-link a{
         font-size: 20px;
+        line-height: 20px;
     }
     .footer__menu-button {
         font-size: 20px;
+        line-height: 20px;
+    }
+    .contact__team-textTitle {
+        font-size: 24px;
+        line-height: 20px;
+    }
+    .contact__contact-link{
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .contact__contact-adress {
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .contact__team-title{
+        font-size: 64px;
+        line-height: 64px;
+    }
+    .contact__contact-title {
+        font-size: 64px;
+        line-height: 64px;
+    }
+    .contact__team-textLink {
+        padding-top: 15px;
+        transition: 2s;
     }
 }
 @media (max-width:1550px){
