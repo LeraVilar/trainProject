@@ -39,6 +39,11 @@ logo {
     font-weight: 250;
     line-height: 24px;
     letter-spacing: 0em;
+    transition: .5s;
+}
+.header__menu-link a:hover{
+    color: #C50008;
+    transition: .5s;
 }
 .header__menu-buttons {
     display: flex;
@@ -54,6 +59,12 @@ logo {
     color: #6E55C4;
     padding: 16px 47px 15px 46px;
     margin: 0px 30px 0px 60px;
+    transition: .5s;
+}
+.header__menu-button:hover{
+    color: #fff;
+    background: #6E55C4;
+    transition: .5s;
 }
 .main__home{
     flex-grow: 1;
@@ -370,6 +381,32 @@ img.contact__team-item_img {
 
 
 
+
+
+
+.menu__item {
+    background: red;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+  }
+.menu__content {
+    background: rgb(98, 0, 255);
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+  }
+  .active {
+    background: green;
+  }
+
+
+
+
+
+
+
+
 footer{
     display: flex;
     justify-content: space-between;
@@ -402,6 +439,11 @@ footer{
     font-weight: 250;
     line-height: 24px;
     letter-spacing: 0em;
+    transition: .5s;
+}
+.footer__menu-link a:hover{
+    color: #C50008;
+    transition: .5s;
 }
 .footer__menu-buttons {
     display: flex;
@@ -418,6 +460,12 @@ footer{
     color: #FFFFFF;
     padding: 16px 47px 15px 46px;
     margin: 0px 30px 0px 30px;
+    transition: .5s;
+}
+.footer__menu-button:hover{
+    transition: .5s;
+    background: #C50008;
+    color: #FFFFFF !important;
 }
 a.footer__menu-button-img {
     padding: 0px 15px;
