@@ -25,7 +25,6 @@ parent.addEventListener('click', (event) => {
 });
 
 parent.addEventListener('click', (event) => {
-  // Отлавливаем элемент в родители на который мы нажали
   let target = event.target;
   if(document.getElementsByClassName('menu__item1 active').length > 0) {
     document.getElementsByClassName('menu__content1')[0].classList.add('active');
@@ -35,7 +34,6 @@ parent.addEventListener('click', (event) => {
   }
 });
 parent.addEventListener('click', (event) => {
-  // Отлавливаем элемент в родители на который мы нажали
   let target = event.target;
   if(document.getElementsByClassName('menu__item2 active').length > 0) {
     document.getElementsByClassName('menu__content2')[0].classList.add('active');
@@ -45,7 +43,6 @@ parent.addEventListener('click', (event) => {
   }
 });
 parent.addEventListener('click', (event) => {
-  // Отлавливаем элемент в родители на который мы нажали
   let target = event.target;
   if(document.getElementsByClassName('menu__item3 active').length > 0) {
     document.getElementsByClassName('menu__content3')[0].classList.add('active');
@@ -55,7 +52,6 @@ parent.addEventListener('click', (event) => {
   }
 });
 parent.addEventListener('click', (event) => {
-  // Отлавливаем элемент в родители на который мы нажали
   let target = event.target;
   if(document.getElementsByClassName('menu__item4 active').length > 0) {
     document.getElementsByClassName('menu__content4')[0].classList.add('active');
