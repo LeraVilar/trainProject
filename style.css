@@ -16,7 +16,8 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 26px 72px;
+    margin: 26px 0px;
+    padding: 0px 72px;
     height: 9vh;
 }
 logo {
@@ -260,7 +261,6 @@ span.main__pages-info_text {
     display: flex;
     justify-content: space-between;
     color: #fff;
-    gap: 20px;
     padding: 50px 0px;
 }
 /* .contact__team-items {
@@ -377,32 +377,183 @@ img.contact__team-item_img {
     padding-right: 25px;
 }
 
-
-
-
-
-
-
-
-.menu__item {
-    background: red;
-    width: 50px;
-    height: 50px;
-    margin: 5px;
-  }
-.menu__content {
-    background: rgb(98, 0, 255);
-    width: 50px;
-    height: 50px;
-    margin: 5px;
-  }
-  .active {
-    background: green;
-  }
-
-
-
-
+.main__service-pageWrapper {
+    background: url(./images/bgService.png) no-repeat right top;
+    background-size: 35%;
+    display: flex;
+    flex-direction: column;
+}
+.service__page-title{
+    font-size: 96px;
+    font-weight: 300;
+    line-height: 110px;
+    letter-spacing: -6.5%;
+    color: #6E55C4;
+    font-family: 'Gilroy-Light', sans-serif;
+    padding: 0px 70px;
+}
+.service__page-info{
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 56px;
+    letter-spacing: -0.065em;
+    font-family: 'Gilroy-Light', sans-serif;
+    color: #fff;
+    width: 40%;
+    padding: 12px 70px 22px;
+} 
+.main__service-slider{
+    padding: 0px 70px;
+}
+.nav-tabs{
+    border: none;
+}
+.nav{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.nav-tabs .nav-link{
+    padding: 0px;
+    border: 0px;
+    border-top-left-radius: 0; 
+    border-top-right-radius: 0;
+    background-color: #fff0;
+    color:#FFFFFF;
+    margin-top: -50px;
+    width: 100%;
+}
+.nav-tabs .nav-link :hover .service__page-sliderImg{
+    filter: grayscale(0);
+    transition: 1s;
+}
+.nav-tabs .nav-link.active {
+    color:#FFFFFF;
+    background-color: #fff0;
+    border-color: #fff0;
+    width: 100%;
+    background: url(./images/servsLinene.png) no-repeat right;
+    background-size: contain;
+    background-position-x: 80%;
+    transition: 1s;
+}
+.service__page-sliderNumber{
+    position: relative;
+    top: 50px;
+    text-align: end;
+    font-family: 'Gilroy-Light', sans-serif;
+    font-size: 80px;
+    font-weight: 100;
+    line-height: 97px;
+    letter-spacing: 0em;
+    z-index: 1;
+}
+.service__page-sliderTitle {
+    padding-top: 10px;
+    font-family: 'Gilroy-Light', sans-serif;
+    text-align: start;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 80%;
+}
+.service__page-sliderImg {
+    width: 100%;
+    filter: grayscale(1);
+    transition: 1s;
+}
+#myTab {
+    padding-bottom: 260px;
+}
+.nav .swiper-slide:nth-child(2n) {
+    top: 100px;
+}
+.swiper2.swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+    width: 85%;
+    margin-left: 0px;
+}
+.service__page_tab-content {
+    padding: 0px 70px;
+}
+.swiper-button-next {
+    width: 14%;
+    padding-right: 2%;
+}
+.custom-next {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.135em;
+    padding: 15px 40px;
+    background: rgba(0, 0, 0, 0.76);
+    height: 60px;
+    align-items: center;
+    display: flex;
+    top: 100px;
+    position: relative;
+    transition: .3s;
+}
+.custom-next:active{
+    background: #C50008;
+    transition: .3s;
+}
+.custom-next svg{
+    padding-left: 20px;
+}
+.tab-content__info{
+    display: flex;
+}
+.tab-content__info-text {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 200px 0px 100px;
+}
+.tab-content__info-title {
+    display: flex;
+    align-items: end;
+    font-family: 'Gilroy-Light', sans-serif;
+    font-size: 55px;
+    font-weight: 300;
+    line-height: 66px;
+    letter-spacing: 0em;
+    color: rgba(110, 85, 196, 1);
+}
+.tab-content__info-titleNumber{
+    font-size: 200px;
+    font-weight: 500;
+    line-height: 154px;
+    letter-spacing: -0.055em;
+    color: #ff000000;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-text-stroke: 1px #FFFFFF;
+    text-stroke: 1px #FFFFFF;
+}
+.tab-content__info-info{
+    font-family: 'Gilroy-Light', sans-serif;
+    font-size: 38px;
+    font-weight: 300;
+    line-height: 53px;
+    letter-spacing: 0em;
+    color: #fff;
+    padding: 30px 0px;
+}
+.red__button{
+    color: #C50008;
+    border: 1px solid #C50008;
+    padding: 20px 70px;
+    text-decoration: none;
+    text-align: center;
+    width: 400px;
+    transition: 1s;
+}
+.red__button:hover{
+    background: #C50008;
+    color: #FFFFFF;
+    transition: 1s;
+    border: 1px solid#c5000700;
+}
 
 
 
@@ -523,7 +674,17 @@ a.footer__menu-button-img {
         font-size: 64px;
         line-height: 64px;
     }
-    
+    .service__page-title{
+        font-size: 48px;
+        font-weight: 300;
+        line-height: 55px;
+    }
+    .service__page-info{
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 28px;
+        letter-spacing: -0.065em;
+    }
 }
 @media (max-width:1550px){
     header {

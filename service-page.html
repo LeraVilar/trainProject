@@ -5,14 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.cdnfonts.com/css/gilroy-bold?styles=20876,20877,20878,20879,20880" rel="stylesheet">      
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-/>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>                                               
-    <link rel="stylesheet" href="./style.css">   
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold?styles=20876,20877,20878,20879,20880" rel="stylesheet">  
+    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>       
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">                                           
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">   
 </head>
 <body>
     <header>
@@ -35,22 +34,195 @@
     </header>
 
 
-        <div class="container">
-            <div class="menu__item menu__item1"></div>
-            <div class="menu__item menu__item2"></div>
-            <div class="menu__item menu__item3"></div>
-            <div class="menu__item menu__item4"></div>
-            <div class="container2">
-                <div class=" menu__content menu__content1 active"></div>
-                <div class=" menu__content menu__content2"></div>
-                <div class=" menu__content menu__content3"></div>
-                <div class=" menu__content menu__content4"></div>
+
+    <main class="main__service-page">
+        <div class="main__service-pageWrapper">
+            <span class="service__page-title">
+                Сервис основа
+            </span>
+            <span class="service__page-info">
+                В современном мире сервис любого промышленного оборудования играет ключевую роль в процессе эксплуатации. Наша команда, являясь официальным представителем TRANE в России, более 20 лет успешно предлагает собственникам оборудования TRANE сервис наивысшего качества. Мы способны решать задачи любой сложности от простой диагностики до сложных ремонтов и модернизаций.
+            </span>
+            <div class="main__service-slider d-flex">
+                <div class="swiper2 swiper ">
+                    <ul class="swiper-wrapper nav nav-tabs" id="myTab" role="tablist">
+                        <li class="swiper-slide" role="presentation">
+                            <button class="nav-link active" id="tab-1" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="tab-1" aria-selected="true">
+                                <div class="service__page-wrapper">
+                                    <div class="service__page-sliderNumber text-start">
+                                        01
+                                    </div>
+                                    <img src="./images/servSlider1.png" alt="" class="service__page-sliderImg">
+                                    <div class="service__page-sliderTitle">
+                                        Шеф-монтаж
+                                    </div>
+                                </div>
+                            </button>
+                        </li>
+                        <li class="swiper-slide" role="presentation">
+                            <button class="nav-link" id="tab-2" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="tab-2" aria-selected="false">
+                                <div class="service__page-wrapper">
+                                    <div class="service__page-sliderNumber">
+                                        02
+                                    </div>
+                                    <img src="./images/servSlider1.png" alt="" class="service__page-sliderImg">
+                                    <div class="service__page-sliderTitle">
+                                        Решение любых гарантийных случаев
+                                    </div>
+                                </div>
+                            </button>
+                        </li>
+                        <li class="swiper-slide" role="presentation">
+                            <button class="nav-link" id="tab-3" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="tab-3" aria-selected="false">
+                                <div class="service__page-wrapper">
+                                    <div class="service__page-sliderNumber ">
+                                        03
+                                    </div>
+                                    <img src="./images/servSlider1.png" alt="" class="service__page-sliderImg">
+                                    <div class="service__page-sliderTitle">
+                                        Техническое обслуживание
+                                    </div>
+                                </div>
+                            </button>
+                        </li>
+                        <li class="swiper-slide" role="presentation">
+                            <button class="nav-link" id="tab-4" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="tab-4" aria-selected="false">
+                                <div class="service__page-wrapper">
+                                    <div class="service__page-sliderNumber">
+                                        04
+                                    </div>
+                                    <img src="./images/servSlider1.png" alt="" class="service__page-sliderImg">
+                                    <div class="service__page-sliderTitle">
+                                        Предпусковая инспекция 
+                                    </div>
+                                </div>
+                            </button>
+                        </li>
+                        <li class="swiper-slide" role="presentation">
+                            <button class="nav-link" id="tab-4" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="tab-4" aria-selected="false">
+                                <div class="service__page-wrapper">
+                                    <div class="service__page-sliderNumber">
+                                        05
+                                    </div>
+                                    <img src="./images/servSlider1.png" alt="" class="service__page-sliderImg">
+                                    <div class="service__page-sliderTitle">
+                                        Решение любых гарантийных случаев
+                                    </div>
+                                </div>
+                            </button>
+                        </li>
+                        <li class="swiper-slide" role="presentation">
+                            <button class="nav-link" id="tab-4" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="tab-4" aria-selected="false">
+                                <div class="service__page-wrapper">
+                                    <div class="service__page-sliderNumber">
+                                        06
+                                    </div>
+                                    <img src="./images/servSlider1.png" alt="" class="service__page-sliderImg">
+                                    <div class="service__page-sliderTitle">
+                                        Решение любых гарантийных случаев
+                                    </div>
+                                </div>
+                            </button>
+                        </li>
+                        <li class="swiper-slide" role="presentation">
+                            <button class="nav-link" id="tab-4" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="tab-4" aria-selected="false">
+                                <div class="service__page-wrapper">
+                                    <div class="service__page-sliderNumber">
+                                        07
+                                    </div>
+                                    <img src="./images/servSlider1.png" alt="" class="service__page-sliderImg">
+                                    <div class="service__page-sliderTitle">
+                                        Решение любых гарантийных случаев
+                                    </div>
+                                </div>
+                            </button>
+                        </li>
+                        <li class="swiper-slide" role="presentation">
+                            <button class="nav-link" id="tab-4" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="tab-4" aria-selected="false">
+                                <div class="service__page-wrapper">
+                                    <div class="service__page-sliderNumber">
+                                        08
+                                    </div>
+                                    <img src="./images/servSlider1.png" alt="" class="service__page-sliderImg">
+                                    <div class="service__page-sliderTitle">
+                                        Решение любых гарантийных случаев
+                                    </div>
+                                </div>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="custom-next">
+                    NEXT 
+                    <svg width="89" height="16" viewBox="0 0 89 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M88.7071 8.70711C89.0976 8.31658 89.0976 7.68342 88.7071 7.29289L82.3431 0.928932C81.9526 0.538408 81.3195 0.538408 80.9289 0.928932C80.5384 1.31946 80.5384 1.95262 80.9289 2.34315L86.5858 8L80.9289 13.6569C80.5384 14.0474 80.5384 14.6805 80.9289 15.0711C81.3195 15.4616 81.9526 15.4616 82.3431 15.0711L88.7071 8.70711ZM0 9H88V7H0V9Z" fill="white"/>
+                        </svg>
+                </div>
             </div>
-        </div>  
-        
-
-
-
+            <div class="tab-content service__page_tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="contact" role="tabpanel" aria-labelledby="tab-1">
+                    <div class="tab-content__info">
+                        <img src="./images/servisCont1.jpg" alt="">
+                        <div class="tab-content__info-text">
+                            <span class="tab-content__info-title">Шеф-монтаж <span class="tab-content__info-titleNumber">01</span></span>
+                            <span class="tab-content__info-info">
+                                От правильности монтажа зависит дальнейшая работа холодильного центра. 
+                            </span>
+                            <span class="tab-content__info-info">
+                                Наши инженеры готовы оказать поддержку на стадии монтажа и дать все необходимые рекомендации с учетом специфики оборудования.
+                            </span>
+                            <a href="#" class="red__button">оформить заявку</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-home" role="tabpanel" aria-labelledby="tab-2">
+                    <div class="tab-content__info">
+                        <img src="./images/servisCont1.jpg" alt="">
+                        <div class="tab-content__info-text">
+                            <span class="tab-content__info-title">Решение любых гарантийных случаев<span class="tab-content__info-titleNumber">02</span></span>
+                            <span class="tab-content__info-info">
+                                От правильности монтажа зависит дальнейшая работа холодильного центра. 
+                            </span>
+                            <span class="tab-content__info-info">
+                                Наши инженеры готовы оказать поддержку на стадии монтажа и дать все необходимые рекомендации с учетом специфики оборудования.
+                            </span>
+                            <a href="#" class="red__button">оформить заявку</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="tab-3">
+                    <div class="tab-content__info">
+                        <img src="./images/servisCont1.jpg" alt="">
+                        <div class="tab-content__info-text">
+                            <span class="tab-content__info-title">Техническое обслуживание<span class="tab-content__info-titleNumber">03</span></span>
+                            <span class="tab-content__info-info">
+                                От правильности монтажа зависит дальнейшая работа холодильного центра. 
+                            </span>
+                            <span class="tab-content__info-info">
+                                Наши инженеры готовы оказать поддержку на стадии монтажа и дать все необходимые рекомендации с учетом специфики оборудования.
+                            </span>
+                            <a href="#" class="red__button">оформить заявку</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="tab-4">
+                    <div class="tab-content__info">
+                        <img src="./images/servisCont1.jpg" alt="">
+                        <div class="tab-content__info-text">
+                            <span class="tab-content__info-title">Предпусковая инспекция<span class="tab-content__info-titleNumber">04</span></span>
+                            <span class="tab-content__info-info">
+                                От правильности монтажа зависит дальнейшая работа холодильного центра. 
+                            </span>
+                            <span class="tab-content__info-info">
+                                Наши инженеры готовы оказать поддержку на стадии монтажа и дать все необходимые рекомендации с учетом специфики оборудования.
+                            </span>
+                            <a href="#" class="red__button">оформить заявку</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
 
     <footer>
@@ -78,6 +250,9 @@
             </div>
         </div>
     </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="./js.js"></script>
 
 
