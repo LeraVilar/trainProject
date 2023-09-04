@@ -277,7 +277,7 @@ img.contact__team-item_img {
     flex-direction: column;
 }
 .contact__team-text {
-    padding: 50px 10px 70px;
+    padding: 50px 10px 70px 40px;
     position: absolute;
     bottom: 30px;
     background: none;
@@ -373,10 +373,25 @@ img.contact__team-item_img {
 .contact__contact-social {
     padding-top: 60px;
 }
-.contact__contact-social img{
+.contact__contact-social a{
     padding-right: 25px;
+    text-decoration: none;
+    transition: .5s;
 }
-
+.contact__contact-social svg{
+    transition: .5s;
+}
+.contact__contact-social path{
+    transition: .5s;
+}
+.contact__contact-social a:hover svg{
+    fill: #6E55C4;
+    transition: .5s;
+}
+.contact__contact-social a:hover path{
+    fill: #ffffff;
+    transition: .5s;
+}
 .main__service-pageWrapper {
     background: url(./images/bgService.png) no-repeat right top;
     background-size: 35%;
@@ -625,6 +640,21 @@ footer{
 }
 a.footer__menu-button-img {
     padding: 0px 15px;
+    transition: .5s;
+}
+a.footer__menu-button-img path {
+    transition: .5s;
+}
+a.footer__menu-button-img circle {
+    transition: .5s;
+}
+a.footer__menu-button-img:hover path {
+    fill: #C50008;
+    transition: .5s;
+}
+a.footer__menu-button-img:hover circle {
+    stroke: #C50008;
+    transition: .5s;
 }
 
 @media (max-width:1950px){
