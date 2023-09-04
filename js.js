@@ -3,13 +3,13 @@ const swiper = new Swiper('.swiper', {
     slidesPerView: 4,
     spaceBetween: 30,
     breakpoints: {
-      00: {
-        slidesPerView: 1,
-        slidesPerGroup: 1,
+      0: {
+        slidesPerView:1,
+        slidesPerGroup:1,
        },
-      720: {
-          slidesPerView: 2,
-          slidesPerGroup: 2,
+      450: {
+          slidesPerView:1.5,
+          slidesPerGroup: 1,
       },
       990: {
           slidesPerView: 2,

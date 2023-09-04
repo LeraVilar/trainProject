@@ -17,7 +17,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin: 26px 0px;
-    padding: 0px 72px;
+    padding: 0px 70px;
     height: 9vh;
 }
 logo {
@@ -316,7 +316,7 @@ img.contact__team-item_img {
 .contact__team-items:hover img.contact__team-item_img{
     opacity: 1;
     transition: .5s;
-    transform: translateY(-90px) rotate(0deg);
+    transform: translateY(-55px) rotate(0deg);
 }
 .contact__team-items:hover .contact__team-textSubTitle{
     transition: 0s;
@@ -642,6 +642,7 @@ footer{
     transition: .5s;
     background: #C50008;
     color: #FFFFFF !important;
+    border: 2px solid #C50008;
 }
 a.footer__menu-button-img {
     padding: 0px 7px;
@@ -755,9 +756,6 @@ a.footer__menu-button-img:hover circle {
     }
 }
 @media (max-width:1550px){
-    header {
-        padding: 26px 34px;
-    }
     logo img {
         height: 40px;
     }
@@ -864,7 +862,7 @@ a.footer__menu-button-img:hover circle {
         color: #000;
         transform: translateY(30px) translateX(80px) rotate(6deg);
         width: 70%;
-        transition: 2s;
+        transition: 1s;
     }
     .contact__team-text {
         padding: 30px 10px 30px;
@@ -883,10 +881,8 @@ a.footer__menu-button-img:hover circle {
         color: #000;
         transform: translateY(55px) translateX(25px) rotate(5deg);
         width: 70%;
-        transition: 2s;
+        transition: 1s;
     }
-
-
 
 
 
@@ -1041,6 +1037,19 @@ a.footer__menu-button-img:hover circle {
 
 
 @media (max-width:720px){
+    header {
+        padding: 0px 20px;
+    }
+
+    .main__pages-homes {
+        padding: 0px 20px;
+    }
+    .main__pages-homes_info {
+        padding: 60px 20px 50px 20px;
+    }
+    .main__contact {
+        padding: 0px 20px;
+    }
     .service__page-info {
         width: 100%;
     }
@@ -1053,6 +1062,14 @@ a.footer__menu-button-img:hover circle {
         font-size: 32px;
         font-weight: 300;
         line-height: 35px;
+        padding: 0px 20px;
+    }
+    .service__page-info{
+        padding: 12px 20px 22px;
+    }
+    .main__service-slider {
+        padding: 0px 20px;
+        flex-direction: column;
     }
     .custom-next {
         font-size: 15px;
@@ -1063,6 +1080,7 @@ a.footer__menu-button-img:hover circle {
     }
     .tab-content__info-title {
         padding-bottom: 20px;
+        justify-content: space-between;
     }
     .tab-content__info-info {
         padding: 10px 0px;
@@ -1082,6 +1100,9 @@ a.footer__menu-button-img:hover circle {
         width: 100%;
         padding: 20px 0px;
     }
+    .service__page_tab-content {
+        padding: 0px 20px;
+    }
     .tab-content__info img {
         width: 100%;
         height: 100%;
@@ -1089,14 +1110,40 @@ a.footer__menu-button-img:hover circle {
     .info_link {
         width: 90%;
     }
-
-
-
-
-
-
+    .contact__contact-social a svg {
+        height: 40px;
+    }
+    .contact__contact-social a {
+        padding-right: 15px;
+    }
+    .contact__team-block {
+        padding: 20px 0px;
+    }
+    .contact__team-items:hover .contact__team-text {
+        transform: translateY(-15px) translateX(25px) rotate(5deg);
+        width: 80%;
+    }
+    .tab-content__info-titleNumber {
+        font-size: 50px;
+        line-height: 40px;
+    }
+    .service__page-sliderNumber {
+        font-size: 40px;
+    }
+    .footer__menu-link a {
+        font-size: 9px;
+        padding-left: 0px;
+        padding-right: 25px;
+    }
+    .footer__menu-button {
+        padding: 0px;
+    }
+    footer {
+        padding: 26px 20px;
+        width: auto;
+    }
     .footer__info-img img {
-        height: 25px;
+        height: 35px;
     }
 }
 
