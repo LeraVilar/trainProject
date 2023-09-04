@@ -33,6 +33,7 @@ const swiper2 = new Swiper('.swiper2', {
       nextEl: ".custom-next",
     },
     loop: true,
+    
     breakpoints: {
       00: {
         slidesPerView: 1.9,
