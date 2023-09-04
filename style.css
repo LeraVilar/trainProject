@@ -1130,6 +1130,9 @@ a.footer__menu-button-img:hover circle {
     .service__page-sliderNumber {
         font-size: 40px;
     }
+    #myTab {
+        padding-bottom: 250px;
+    }
     .footer__menu-link a {
         font-size: 9px;
         padding-left: 0px;

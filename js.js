@@ -35,11 +35,11 @@ const swiper2 = new Swiper('.swiper2', {
     loop: true,
     breakpoints: {
       00: {
-        slidesPerView: 1.9,
+        slidesPerView: 1,
         slidesPerGroup: 1,
       },
-      720: {
-          slidesPerView: 2.2,
+      400: {
+          slidesPerView: 2,
           slidesPerGroup: 2,
       },
       990: {
