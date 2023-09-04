@@ -256,6 +256,8 @@ span.main__pages-info_text {
     letter-spacing: 0em;
     text-align: left;
     color: #fff;
+    position: relative;
+    z-index: 2;
 }
 .contact__team-block {
     display: flex;
@@ -314,7 +316,7 @@ img.contact__team-item_img {
 .contact__team-items:hover img.contact__team-item_img{
     opacity: 1;
     transition: .5s;
-    transform: translateY(-30px) rotate(0deg);
+    transform: translateY(-90px) rotate(0deg);
 }
 .contact__team-items:hover .contact__team-textSubTitle{
     transition: 0s;
