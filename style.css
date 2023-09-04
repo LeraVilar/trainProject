@@ -270,7 +270,7 @@ img.contact__team-item_img {
     width: 100%;
     transform: rotate(3deg);
     opacity: .5;
-    transition: 2s;
+    transition: .5s;
 }
 .contact__team-textLink {
     display: flex;
@@ -281,7 +281,7 @@ img.contact__team-item_img {
     position: absolute;
     bottom: 30px;
     background: none;
-    transition: 2s;
+    transition: .5s;
     width: 80%;
     border-radius: 20px;
 }
@@ -290,27 +290,30 @@ img.contact__team-item_img {
     font-weight: 250;
     line-height: 29px;
     border-bottom: 1px solid #fff;
-    transition: 2s;
+    transition: .2s;
 }
 .contact__team-textLink {
     padding-top: 15px;
-    transition: 2s;
+    transition: .2s;
     font-size: 40px;
+}
+.contact__team-textSubTitle{
+    transition: .2s;
 }
 .contact__team-textLink a{
     padding-top: 5px;
     display: none;
     color: #fff;
-    transition: 2s;
+    transition: .2s;
 }
 .contact__team-textLink a{
     color: #fff;
     text-decoration: none;
-    transition: 2s;
+    transition: .2s;
 }
 .contact__team-items:hover img.contact__team-item_img{
     opacity: 1;
-    transition: 2s;
+    transition: .5s;
     transform: translateY(-30px) rotate(0deg);
 }
 .contact__team-items:hover .contact__team-text {
@@ -319,7 +322,7 @@ img.contact__team-item_img {
     color: #000;
     transform: translateY(30px) translateX(80px) rotate(6deg);
     width: 80%;
-    transition: 2s;
+    transition: .5s;
 }
 .contact__team-items:hover .contact__team-textTitle{
     border-bottom: 1px solid #000; 
@@ -327,15 +330,13 @@ img.contact__team-item_img {
 .contact__team-items:hover .contact__team-textLink{
     display: flex;
     flex-direction: column;
-    transition: 2s;
+    transition: .2s;
 }
 .contact__team-items:hover .contact__team-textLink a{
     display: flex;
     flex-direction: column;
-    transition: 2s;
+    transition: .2s;
     color: #000;
-}
-.contact__contact {
 }
 .contact__contact-title {
     font-family: 'Gilroy-Light', sans-serif;
