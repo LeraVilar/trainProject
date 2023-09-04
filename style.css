@@ -823,6 +823,37 @@ a.footer__menu-button-img {
         width: 100%;
         margin-left: 0px;
     }
+    .contact__team-items:hover .contact__team-text {
+        background: #D9D9D9;
+        border-radius: 20px;
+        color: #000;
+        transform: translateY(30px) translateX(80px) rotate(6deg);
+        width: 70%;
+        transition: 2s;
+    }
+    .contact__team-text {
+        padding: 30px 10px 30px;
+        width: 65%;
+    }
+    .contact__team-textTitle {
+        font-size: 18px;
+        line-height: 1px;
+    }
+    .contact__team-textLink {
+        font-size: 14px;
+    }
+    .contact__team-items:hover .contact__team-text {
+        background: #D9D9D9;
+        border-radius: 20px;
+        color: #000;
+        transform: translateY(55px) translateX(25px) rotate(5deg);
+        width: 70%;
+        transition: 2s;
+    }
+
+
+
+
 
 
     .footer__info-img img {
@@ -848,6 +879,7 @@ a.footer__menu-button-img {
         width: auto;
         padding: 0px 6px;
     }  
+
 }
 @media (max-width:990px){
     .header__menu {
@@ -905,6 +937,32 @@ a.footer__menu-button-img {
         width: 200px;
         padding: 20px 0px
     }
+    .contact__team-title {
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .contact__contact-title {
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .contact__contact-link {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .contact__contact-adress {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .contact__contact-social {
+        padding-top: 20px;
+    }
+    .contact__contact-social img {
+        padding-right: 15px;
+        height: 40px;
+    }
+
+
+
 
 
 
