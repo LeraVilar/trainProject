@@ -290,31 +290,34 @@ img.contact__team-item_img {
     font-weight: 250;
     line-height: 29px;
     border-bottom: 1px solid #fff;
-    transition: .2s;
+    transition: .0s;
 }
 .contact__team-textLink {
     padding-top: 15px;
-    transition: .2s;
+    transition: 0s;
     font-size: 40px;
 }
 .contact__team-textSubTitle{
-    transition: .2s;
+    transition: .0s;
 }
 .contact__team-textLink a{
     padding-top: 5px;
     display: none;
     color: #fff;
-    transition: .2s;
+    transition: 0s;
 }
 .contact__team-textLink a{
     color: #fff;
     text-decoration: none;
-    transition: .2s;
+    transition: 0s;
 }
 .contact__team-items:hover img.contact__team-item_img{
     opacity: 1;
     transition: .5s;
     transform: translateY(-30px) rotate(0deg);
+}
+.contact__team-items:hover .contact__team-textSubTitle{
+    transition: 0s;
 }
 .contact__team-items:hover .contact__team-text {
     background: #D9D9D9;
@@ -330,12 +333,12 @@ img.contact__team-item_img {
 .contact__team-items:hover .contact__team-textLink{
     display: flex;
     flex-direction: column;
-    transition: .2s;
+    transition: 0s;
 }
 .contact__team-items:hover .contact__team-textLink a{
     display: flex;
     flex-direction: column;
-    transition: .2s;
+    transition: 0s;
     color: #000;
 }
 .contact__contact-title {
