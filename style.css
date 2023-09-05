@@ -517,7 +517,7 @@ img.contact__team-item_img {
     position: relative;
     transition: .3s;
 }
-.custom-next:active{
+.custom-next:hover{
     background: #C50008;
     transition: .3s;
 }
