@@ -443,10 +443,15 @@ img.contact__team-item_img {
     color:#FFFFFF;
     margin-top: -50px;
     width: 100%;
+    transition: .5s;
 }
 .nav-tabs .nav-link :hover .service__page-sliderImg{
     filter: grayscale(0);
-    transition: 1s;
+    transition: .5s;
+}
+.nav-tabs .nav-link :hover .service__page-sliderNumber {
+    color: #6E55C4;
+    transition: .5s;
 }
 .nav-tabs .nav-link.active {
     color:#FFFFFF;
@@ -456,7 +461,7 @@ img.contact__team-item_img {
     background: url(./images/servsLinene.png) no-repeat right;
     background-size: contain;
     background-position-x: 80%;
-    transition: 1s;
+    transition: .9s;
 }
 .service__page-sliderNumber{
     position: relative;
@@ -468,6 +473,7 @@ img.contact__team-item_img {
     line-height: 97px;
     letter-spacing: 0em;
     z-index: 1;
+    transition: .5s;
 }
 .service__page-sliderTitle {
     padding-top: 10px;
