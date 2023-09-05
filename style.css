@@ -43,8 +43,9 @@ logo {
     transition: .5s;
 }
 .header__menu-link a:hover{
-    color: #C50008;
+    color: #6E55C4;
     transition: .5s;
+    text-shadow: 1px 1px 1px #6E55C4;
 }
 .header__menu-buttons {
     display: flex;
@@ -580,6 +581,32 @@ img.contact__team-item_img {
     transition: 1s;
     border: 1px solid#c5000700;
 }
+.main__about{
+    padding: 50px 70px;
+    color: #fff;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.main__about-nav{
+    display: flex;
+    flex-direction: column;
+}
+.main__about-nav.nav-tabs .nav-link {
+    margin-top: 0px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
