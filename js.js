@@ -40,19 +40,19 @@ const swiper2 = new Swiper('.swiper2', {
       },
       400: {
           slidesPerView: 2,
-          slidesPerGroup: 2,
+          slidesPerGroup: 1,
       },
       990: {
           slidesPerView: 2.5,
-          slidesPerGroup: 2,
+          slidesPerGroup: 1,
       },
       1050: {
           slidesPerView: 3,
-          slidesPerGroup: 3,
+          slidesPerGroup: 1,
       },
       1250: {
           slidesPerView: 4,
-          slidesPerGroup: 4,
+          slidesPerGroup: 1,
       },
     },
 
