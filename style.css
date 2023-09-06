@@ -646,6 +646,9 @@ img.contact__team-item_img {
     text-align: center;
     justify-content: center;
     padding: 10px;
+    height: 100%;
+    width: 100%;
+    align-items: center;
 }
 .accordeon-item {
     height: 400px;
