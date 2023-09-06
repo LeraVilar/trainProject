@@ -154,6 +154,9 @@ logo {
     justify-content: end;  
     min-height: 90vh;
 }
+.service__page-wrapper {
+    width: 100%;
+}
 .main__pages-parts{
     background: url(./images/parts-img1.jpg) no-repeat center;
     background-size: cover;
