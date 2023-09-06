@@ -658,21 +658,33 @@ img.contact__team-item_img {
     cursor: pointer;
 }
 .accordeon-item:hover{
-    background: url(./images/about1.png);
+    background: url(./images/about1.1.png);
     background-size: cover;
-    filter: grayscale(.7);
 }
+.main__about-buttons:hover .accordeon-item{
+    background: url(./images/about1.1.png);
+    background-size: cover;
+}
+
 .accordeon-item.active {
     background: url(./images/about1.png);
     background-size: cover;
-    filter: grayscale(0);
+}
+
+.main__about-buttons:hover .accordeon-item.active{
+    background: url(./images/about1.png);
+    background-size: cover;
+}
+.accordeon-item.active:hover{
+    background: url(./images/about1.png);
+    background-size: cover;
 }
 .accordeon-item.active >  .main__about-button{
     opacity: 0;
 }
-.accordeon-item:hover .main__about-button{
+/* .accordeon-item:hover .main__about-button{
     opacity: 0;
-}
+} */
 /* .accordeon-item:nth-child(1) {
     margin-top: 0px;
 } */
