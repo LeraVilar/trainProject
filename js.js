@@ -79,6 +79,9 @@ let tab = function () {
               closeItem.classList.remove('active')
               base.classList.add('active')
             })
+            tabNav.forEach(closeBlock => {
+              closeBlock.classList.remove('active');
+            })
         })
     })
 
