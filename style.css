@@ -724,6 +724,8 @@ footer{
     justify-content: space-between;
     padding: 26px 70px;
     flex-shrink: 0;
+    background: rgba(16, 16, 16, 1);
+    margin-top: 50px;
 }
 .footer__info-text {
     font-family: 'Gilroy-Bold', sans-serif;
@@ -1104,6 +1106,22 @@ a.footer__menu-button-img:hover circle {
     .contact__team-textLink {
         font-size: 14px;
     }
+    .main__about-buttons {
+        justify-content: inherit;
+    }
+    .main__about-infoContent {
+        padding-top: 0px;
+    }
+    .main__about-buttonsWrapper {
+        margin-top: -50px;
+        padding-right: 0px;
+    }
+    .main__about-contentTitle {
+        font-size: 38px;
+        line-height: 38px;
+        padding-bottom: 25px;
+    }
+
 
 
 
@@ -1231,7 +1249,49 @@ a.footer__menu-button-img:hover circle {
         padding-right: 15px;
         height: 40px;
     }
-
+    .main__about {
+        flex-direction: column;
+    }
+    .main__about-info {
+        width: 100%;
+    }
+    .main__about-buttons {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        padding-top: 60px;
+    }
+    .main__about-buttonsWrapper {
+        margin-top: 30px;
+        padding-right: 0px;
+    }
+    .accordeon-item {
+        height: 150px;
+        width: 150px;
+        border-radius: 250px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        border-image: url(/images/border.png) 96 / 54px / 33px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .main__about-contentTitle {
+        font-size: 36px;
+        line-height: 36px;
+        padding-bottom: 25px;
+    }
+    .main__about-content {
+        padding-bottom: 30px;
+        font-size: 13px;
+        line-height: 15px;
+    }
+    span.close {
+        padding: 20px 30px;
+        width: 170px;
+        font-size: 16px;
+        line-height: 17px;
+    }
 
 
 
@@ -1271,7 +1331,12 @@ a.footer__menu-button-img:hover circle {
     header {
         padding: 0px 20px;
     }
-
+    .main__about {
+        padding: 20px 20px;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+    }
     .main__pages-homes {
         padding: 0px 20px;
     }
@@ -1375,6 +1440,7 @@ a.footer__menu-button-img:hover circle {
     footer {
         padding: 26px 20px;
         width: auto;
+        
     }
     .footer__info-img img {
         height: 35px;
@@ -1389,10 +1455,6 @@ a.footer__menu-button-img:hover circle {
 
 
 
-.hidden {
-    display: none;
-  }
-  
 
 
 
