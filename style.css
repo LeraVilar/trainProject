@@ -956,7 +956,7 @@ a.footer__menu-button-img:hover circle {
     align-items: center;
     display: flex;
     justify-content: center;
-    border-image: url(/images/border.png) 96 / 96px / 42px;
+    border-image: url(./images/border.png) 96 / 96px / 42px;
     cursor: pointer;
 }
     .main__about-buttonsWrapper{
