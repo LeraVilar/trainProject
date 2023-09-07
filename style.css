@@ -3,8 +3,6 @@ font-family: 'Gilroy-Heavy', sans-serif;
 font-family: 'Gilroy-Light', sans-serif;
 font-family: 'Gilroy-Medium', sans-serif;
 font-family: 'Gilroy-Regular', sans-serif; */
-
-
 body {
     background: #191919;
     margin: 0px;
@@ -125,22 +123,30 @@ logo {
     background: url(./images/main1.jpg) no-repeat center;
     background-size: cover;
 }
-.main__img-1:hover ~ .main__img-2 ,.main__img-1:hover ~ .main__img-3 ,.main__img-1:hover ~ .main__img-4{
+.main__img-1:hover ~ .main__img-2 ,
+.main__img-1:hover ~ .main__img-3 ,
+.main__img-1:hover ~ .main__img-4{
     width: 7%;
     transition: 2s;
     transition: 2s ease-in;
 }
-.main__img-2:hover ~ .main__img-1 ,.main__img-2:hover ~ .main__img-3 ,.main__img-2:hover ~ .main__img-4{
+.main__img-2:hover ~ .main__img-1 ,
+.main__img-2:hover ~ .main__img-3 ,
+.main__img-2:hover ~ .main__img-4{
     width: 7% !important;
     transition: 2s;
     transition: 2s ease-in;
 }
-.main__img-3:hover ~ .main__img-1 ,.main__img-3:hover ~ .main__img-2 ,.main__img-3:hover ~ .main__img-4{
+.main__img-3:hover ~ .main__img-1 ,
+.main__img-3:hover ~ .main__img-2 ,
+.main__img-3:hover ~ .main__img-4{
     width: 7%;
     transition: 2s;
     transition: 2s ease-in;
 }
-.main__img-4:hover ~ .main__img-1 ,.main__img-4:hover ~ .main__img-3 ,.main__img-4:hover ~ .main__img-3{
+.main__img-4:hover ~ .main__img-1 ,
+.main__img-4:hover ~ .main__img-3 ,
+.main__img-4:hover ~ .main__img-3{
     width: 7%;
     transition: 2s;
     transition: 2s ease-in;
@@ -317,15 +323,18 @@ img.contact__team-item_img {
     text-decoration: none;
     transition: 0s;
 }
-.contact__team-items:hover img.contact__team-item_img{
+img.contact__team-item_img:hover{
+    opacity: 1;
+}
+img.contact__team-item_img.actives {
     opacity: 1;
     transition: .5s;
     transform: translateY(-55px) rotate(0deg);
 }
-.contact__team-items:hover .contact__team-textSubTitle{
+.contact__team-text.actives .contact__team-textSubTitle {
     transition: 0s;
 }
-.contact__team-items:hover .contact__team-text {
+.contact__team-text.actives{
     background: #D9D9D9;
     border-radius: 20px;
     color: #000;
@@ -333,15 +342,15 @@ img.contact__team-item_img {
     width: 80%;
     transition: .5s;
 }
-.contact__team-items:hover .contact__team-textTitle{
+.contact__team-text.actives .contact__team-textTitle{
     border-bottom: 1px solid #000; 
 }
-.contact__team-items:hover .contact__team-textLink{
+.contact__team-text.actives .contact__team-textLink{
     display: flex;
     flex-direction: column;
     transition: 0s;
 }
-.contact__team-items:hover .contact__team-textLink a{
+.contact__team-text.actives .contact__team-textLink a{
     display: flex;
     flex-direction: column;
     transition: 0s;

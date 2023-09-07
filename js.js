@@ -2,52 +2,53 @@ const swiper = new Swiper('.swiper', {
     loop: true,
     slidesPerView: 4,
     spaceBetween: 30,
+    allowTouchMove: false,
     breakpoints: {
       0: {
-        slidesPerView:1,
+        slidesPerView:2.5,
         slidesPerGroup:1,
        },
       450: {
-          slidesPerView:1.5,
+          slidesPerView:2.5,
           slidesPerGroup: 1,
       },
-      500: {
+      720: {
           slidesPerView: 3,
-          slidesPerGroup: 3,
+          slidesPerGroup: 1,
       },
       990: {
           slidesPerView: 4,
-          slidesPerGroup: 4,
+          slidesPerGroup: 1,
       },
       1250: {
           slidesPerView: 4,
-          slidesPerGroup: 4,
+          slidesPerGroup: 1,
       },
     }
   });
 const swiper2 = new Swiper('.swiper2', {
     slidesPerView: 4,
-    slidesPerGroup: 4,
+    slidesPerGroup: 1,
     spaceBetween: 30,
     navigation: {
       nextEl: ".custom-next",
     },
     loop: true,
     breakpoints: {
-      00: {
-        slidesPerView: 1,
-        slidesPerGroup: 1,
+      0: {
+        slidesPerView:2.5,
+        slidesPerGroup:1,
+       },
+      450: {
+          slidesPerView:2.5,
+          slidesPerGroup: 1,
       },
-      400: {
-          slidesPerView: 2,
+      720: {
+          slidesPerView: 3,
           slidesPerGroup: 1,
       },
       990: {
-          slidesPerView: 2.5,
-          slidesPerGroup: 1,
-      },
-      1050: {
-          slidesPerView: 3,
+          slidesPerView: 4,
           slidesPerGroup: 1,
       },
       1250: {
@@ -103,3 +104,40 @@ let tab = function () {
 }
 
 tab();
+
+
+
+let wrapperImgs = document.querySelectorAll(".contact__team-wrapperImg");
+
+wrapperImgs.forEach(function(wrapperImg) {
+  wrapperImg.addEventListener("click", function() {
+    // Удаляем классы "active" у всех "contact__team-item_img" и "contact__team-text" во всех "contact__team-items"
+    let items = document.querySelectorAll(".contact__team-item_img, .contact__team-text");
+    items.forEach(function(item) {
+      item.classList.remove("actives");
+    });
+
+    // Получаем родительский блок "contact__team-items" для текущего "contact__team-wrapperImg"
+    let parent = wrapperImg.closest(".contact__team-items");
+
+    // Добавляем класс "active" к "contact__team-item_img" и "contact__team-text" внутри текущего "contact__team-items"
+    let itemImg = parent.querySelector(".contact__team-item_img");
+    let itemText = parent.querySelector(".contact__team-text");
+    if (itemImg && itemText) {
+      itemImg.classList.add("actives");
+      itemText.classList.add("actives");
+    }
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
