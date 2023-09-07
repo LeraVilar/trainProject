@@ -18,6 +18,14 @@ header {
     padding: 0px 70px;
     height: 9vh;
 }
+.button__header{
+    border: none;
+    background: none;
+    display: none;
+}
+.header__menu-decst {
+    display: flex;
+}  
 logo {
     align-items: center;
     display: flex;
@@ -1198,9 +1206,47 @@ a.footer__menu-button-img:hover circle {
     }
 }
 @media (max-width:990px){
-    .header__menu {
+    .header__menu-decst {
         display: none;
     }    
+    .button__header {
+        border: none;
+        background: none;
+        display: flex;
+        align-items: center;
+    }
+    .btn-close__header{
+        background: none;
+    }
+    .modal-content.modal-content__header {
+        background: rgba(0, 0, 0, 1);
+    }
+    .header__menu-link.modal-header__menu-link {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .header__menu-link.modal-header__menu-link a {
+        padding-left: 0px;
+        padding-top: 20px;
+        font-size: 17px;
+    }
+    .header__menu-buttons.modal-header__menu-buttons {
+        padding: 70px 0px;
+    }
+    .modal-header {
+        border-bottom: 0px;
+        padding: 30px;
+    }
+    .modal-body.modal-body__header {
+        padding: 0px 30px;
+    }
+    .btn-close{
+        opacity: 1;
+    }
+    .btn-close:hover{
+        opacity: 1;
+    }
     .main__pages-homes_info {
         flex-direction: column;
         padding: 90px 70px 50px 70px;
