@@ -19,16 +19,55 @@
             <a href="./"><img src="./images/logo.svg" alt=""></a>
         </logo>
         <div class="header__menu">
-            <div class="header__menu-link">
-                <a href="./about.html">О НАС</a>
-                <a href="./service-page.html">СЕРВИС</a>
-                <a href="./parts.html">ЗАПЧАСТИ</a>
-                <a href="#">АРЕНДА</a>
-                <a href="./contact.html">КОНТАКТЫ</a>
+            <div class="header__menu-decst">
+                <div class="header__menu-link">
+                    <a href="./about.html">О НАС</a>
+                    <a href="./service-page.html">СЕРВИС</a>
+                    <a href="./parts.html">ЗАПЧАСТИ</a>
+                    <a href="#">АРЕНДА</a>
+                    <a href="./contact.html">КОНТАКТЫ</a>
+                </div>
+                <div class="header__menu-buttons">
+                    <a href="" class="header__menu-button">оформить заявку</a>
+                    <a href=""><img src="./images/phone.svg" alt=""></a>
+                </div>
             </div>
-            <div class="header__menu-buttons">
-                <a href="" class="header__menu-button">оформить заявку</a>
-                <a href=""><img src="./images/phone.svg" alt=""></a>
+            <!-- Button trigger modal -->
+            <button type="button" class="button__header" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <svg width="36" height="22" viewBox="0 0 36 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 1H36" stroke="#6E55C4" stroke-width="1.5"/>
+                    <path d="M0 11H29" stroke="#6E55C4" stroke-width="1.5"/>
+                    <path d="M0 21H22" stroke="#6E55C4" stroke-width="1.5"/>
+                </svg>                    
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content modal-content__header">
+                    <div class="modal-header">
+                    <button type="button" class="btn-close btn-close__header" data-bs-dismiss="modal" aria-label="Close">
+                        <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.692261 21.5059L19.621 0.999763" stroke="#6E55C4" stroke-width="1.5"/>
+                        <path d="M1.38727 1.25293L20.316 21.759" stroke="#6E55C4" stroke-width="1.5"/>
+                        </svg>
+                    </button>
+                    </div>
+                    <div class="modal-body modal-body__header">
+                        <div class="header__menu-link modal-header__menu-link">
+                            <a href="./about.html">О НАС</a>
+                            <a href="./service-page.html">СЕРВИС</a>
+                            <a href="./parts.html">ЗАПЧАСТИ</a>
+                            <a href="#">АРЕНДА</a>
+                            <a href="./contact.html">КОНТАКТЫ</a>
+                        </div>
+                        <div class="header__menu-buttons modal-header__menu-buttons">
+                            <a href="" class="header__menu-button">оформить заявку</a>
+                            <a href=""><img src="./images/phone.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                </div>
             </div>
         </div>
     </header>
