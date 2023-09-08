@@ -89,13 +89,13 @@ main {
 }
 .main__img-1{
     width: 24%;
-    background: url(./images/parts-img1.jpg) no-repeat center;
+    background: url(./images/parts-img2.jpg) no-repeat center;
     background-size: cover;
     transition: .5s ease;
 }
 .main__img-2{
     width: 24%;
-    background: url(./images/parts-img2.jpg) no-repeat center;
+    background: url(./images/parts-img1.jpg) no-repeat center;
     background-size: cover;
     transition: .5s ease;
 }
@@ -117,12 +117,12 @@ main {
 .main__img-1.__active{
     width: 77%;
     transition: .5s ease;
-    background: url(./images/parts-img1.jpg) 100% 100% / 100% 100%  no-repeat;
+    background: url(./images/parts-img2.jpg) 100% 100% / 100% 100%  no-repeat;
 }
 .main__img-2.__active{
     width: 77%;
     transition: .5s ease;
-    background: url(./images/parts-img2.jpg) 100% 100% / 100% 100%  no-repeat;
+    background: url(./images/parts-img1.jpg) 100% 100% / 100% 100%  no-repeat;
 }
 .main__img-3.__active{
     width: 77%;
@@ -428,6 +428,7 @@ img.contact__team-item_img {
 }
 img.contact__team-item_img:hover{
     opacity: 1;
+    border: none;
 }
 img.contact__team-item_img.actives {
     opacity: 1;
@@ -1477,13 +1478,13 @@ a.footer__menu-button-img:hover circle {
     }
     .main__img-1 {
         width: 100%;
-        background: url(./images/parts-img1.jpg) 100% 100% / 100% 100%  no-repeat;
+        background: url(./images/parts-img2.jpg) 100% 100% / 100% 100%  no-repeat;
         height: 195px;
         margin-bottom: 15px;
     }
     .main__img-2 {
         width: 100%;
-        background: url(./images/parts-img2.jpg) 100% 100% / 100% 100%  no-repeat;
+        background: url(./images/parts-img1.jpg) 100% 100% / 100% 100%  no-repeat;
         height: 195px;
         margin-bottom: 15px;
     }
