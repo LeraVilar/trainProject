@@ -1,26 +1,35 @@
 const swiper = new Swiper('.contact__team', {
     loop: true,
     slidesPerView: 4,
-    spaceBetween: 30,
-    // allowTouchMove: false,
+    spaceBetween: 20,
+    allowTouchMove: false,
     watchOverflow: true,
+    navigation: {
+      nextEl: ".custom-next",
+    },
     breakpoints: {
       0: {
         slidesPerView:2.3,
         slidesPerGroup:1,
         centeredSlides: true,
+        spaceBetween: 10,
+        allowTouchMove: true,
        },
       450: {
           slidesPerView:2.5,
           slidesPerGroup: 1,
+          centeredSlides: true,
       },
       720: {
           slidesPerView: 3,
           slidesPerGroup: 1,
+          centeredSlides: true,
       },
       990: {
           slidesPerView: 4,
           slidesPerGroup: 1,
+          spaceBetween: 20,
+          allowTouchMove: false,
       },
       1250: {
           slidesPerView: 4,

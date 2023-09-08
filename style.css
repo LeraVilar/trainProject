@@ -646,6 +646,9 @@ img.contact__team-item_img.actives {
 .custom-next svg{
     padding-left: 20px;
 }
+.custom-next__contact{
+    display: none;
+}
 .tab-content__info{
     display: flex;
 }
@@ -1675,11 +1678,30 @@ a.footer__menu-button-img:hover circle {
         opacity: .5;
         pointer-events: none;
     }
+    .swiper-slide__service , .swiper-slide__service{
+        opacity: 1;
+        pointer-events: all;
+    }
+    .custom-next__contact{
+        display: flex;
+        top: -20px;
+    }
+    .contact__contact {
+        padding-top: 20px;
+    }
+    .contact__team-items:hover .contact__team-text {
+        width: 90%;
+    }
+    .contact__team-text {
+        width: 90%;
+    }
+    .contact__team-items:hover .contact__team-text {
 
-
-
-
-
+        transform: translateY(45px) translateX(15px) rotate(5deg);
+    }
+    .contact__team-text {
+        padding: 20px 10px 20px;
+    }
     .footer__menu-link {
         padding-right: 0px;
         display: grid;
@@ -1724,6 +1746,7 @@ a.footer__menu-button-img:hover circle {
     }
     .main__contact {
         padding: 0px 20px;
+        padding-bottom: 20px;
     }
     .service__page-info {
         width: 100%;
@@ -1795,7 +1818,7 @@ a.footer__menu-button-img:hover circle {
         padding: 20px 0px;
     }
     .contact__team-items:hover .contact__team-text {
-        transform: translateY(-15px) translateX(25px) rotate(5deg);
+        transform: translateY(35px) translateX(30px) rotate(6deg);
         width: 80%;
     }
     .tab-content__info-titleNumber {
@@ -1814,6 +1837,41 @@ a.footer__menu-button-img:hover circle {
         margin: auto;
         padding-top: 60px;
         margin-bottom: 40px;
+    }
+    img.contact__team-item_img.actives {
+        transform: translateY(-15px) rotate(-3deg);
+    }
+    .contact__team-text.actives {
+        transform: translateY(35px) translateX(30px) rotate(6deg);
+    }
+    .contact__team-textTitle {
+        font-size: 10px;
+    }
+    .contact__team-text {
+        padding: 10px 10px 10px;
+    }
+    .contact__team-textLink {
+        font-size: 9px;
+        padding-top: 5px;
+    }
+    .contact__team-text.actives .contact__team-textSubTitle {
+        display: none;
+    }
+    .contact__team-text.actives .contact__team-textLink a:nth-child(3){
+        display: none;
+    }
+    .contact__team-items:hover .contact__team-text {
+        width: 80%;
+    }
+    .contact__team-text{
+        width: 80%;
+    }
+    .custom-next__contact {
+        display: flex;
+        top: 0px;
+    }
+    .contact__contact {
+        padding-top: 40px;
     }
     .footer__menu-link a {
         font-size: 9px;
