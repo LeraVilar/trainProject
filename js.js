@@ -41,13 +41,16 @@ const swiper2 = new Swiper('.swiper2', {
     slidesPerGroup: 1,
     spaceBetween: 30,
     allowTouchMove: false,
+    watchOverflow: true,
     navigation: {
       nextEl: ".custom-next",
     },
     loop: true,
     breakpoints: {
       0: {
-        slidesPerView:2.5,
+        slidesPerView:2.3,
+        centeredSlides: true,
+        spaceBetween: 12,
        },
       450: {
           slidesPerView:2.5,

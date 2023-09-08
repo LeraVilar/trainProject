@@ -144,9 +144,8 @@ main {
     justify-content: space-between;
     position: absolute;
     width: 100%;
-    bottom: 0px;
     top: 50%;
-    bottom: 30%;
+    height: 100px;
     padding: 0px 20px 0px 70px;
     color: #fff;
     pointer-events: none;
@@ -154,7 +153,8 @@ main {
 .main__img-1.__active .block__crenge-content{
     position: relative;
     display: flex;
-    top: 90%;
+    align-items: flex-end;
+    top: 70%;
     width: 100%;
     opacity: 1;
     transition: 1s .3s;
@@ -162,7 +162,8 @@ main {
 .main__img-2.__active .block__crenge-content{
     position: relative;
     display: flex;
-    top: 90%;
+    align-items: flex-end;
+    top: 70%;
     width: 100%;
     opacity: 1;
     transition: 1s .3s;
@@ -170,7 +171,8 @@ main {
 .main__img-3.__active .block__crenge-content{
     position: relative;
     display: flex;
-    top: 90%;
+    align-items: flex-end;
+    top: 70%;
     width: 100%;
     opacity: 1;
     transition: 1s .3s;
@@ -178,7 +180,8 @@ main {
 .main__img-4.__active .block__crenge-content{
     position: relative;
     display: flex;
-    top: 90%;
+    align-items: flex-end;
+    top: 70%;
     width: 100%;
     opacity: 1;
     transition: 1s .3s;
@@ -197,20 +200,7 @@ main {
     letter-spacing: 0em;
     text-align: left;
     position: relative;
-    bottom: 0px;
     width: 70%;
-}
-.main__img-1.__active .block__crenge-title {
-    bottom: 170px;
-}
-.main__img-2.__active .block__crenge-title {
-    bottom: 70px;
-}
-.main__img-3.__active .block__crenge-title {
-    bottom: 270px;
-}
-.main__img-4.__active .block__crenge-title {
-    bottom: 170px;
 }
 .block__crenge-link {
     font-family: 'Gilroy-Regular', sans-serif;
@@ -223,7 +213,7 @@ main {
     padding-left: 50px;
     border-bottom: 1px solid;
     position: relative;
-    bottom: 50px;
+    /* bottom: 50px; */
     pointer-events: none;
 }
 .main__default-text{
@@ -259,7 +249,7 @@ main {
     min-height: 90vh;
 }
 .main__img:hover + .main__default-text {
-    display: none;
+    transform: translateX(-100%);
     transition: .5 ease-out;
 }
 .service__page-wrapper {
@@ -716,6 +706,7 @@ img.contact__team-item_img.actives {
 }
 .main__about-info {
     width: 50%;
+    position: relative;
 }
 .main__about-infoContent{
     display: flex;
@@ -772,6 +763,7 @@ img.contact__team-item_img.actives {
     border-image: url(/images/border.png) 96 / 135px / 77px;
     cursor: pointer;
     position: relative;
+    background: #191919;
 }
 .accordeon-item:hover:before {
     content: '';
@@ -782,9 +774,9 @@ img.contact__team-item_img.actives {
     box-sizing: border-box;
     border-radius: 100%;
     background-color: #5f49a9;
-    animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) ;
+    animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
 }
-.accordeon-item:hover:after {
+/* .accordeon-item:hover:after {
     content: '';
     position: absolute;
     left: 0; 
@@ -795,8 +787,8 @@ img.contact__team-item_img.actives {
     border-radius: 15px;
     box-shadow: 0 0 8px rgba(0,0,0,.3);
     animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -.4s ;
-}
-.accordeon-item.active:after {
+} */
+/* .accordeon-item.active:after {
     content: '';
     position: absolute;
     left: 0; 
@@ -804,10 +796,11 @@ img.contact__team-item_img.actives {
     display: block;
     width: 100%;
     height: 100%;
+    z-index: 2;
     border-radius: 15px;
     box-shadow: 0 0 8px rgba(0,0,0,.3);
     animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -.4s ;
-}
+} */
 @keyframes pulse-ring {
     0% {
       transform: scale(.33);
@@ -816,28 +809,20 @@ img.contact__team-item_img.actives {
       opacity: 0;
     }
   }    
-    
-.accordeon-item:hover{
-    background: url(./images/about1.1.png);
-    background-size: cover;
+.accordeon-item img {
+    position: absolute;
+    border-radius: 100%;
+    pointer-events: none;
+    opacity: 0;
+    width: 100%;
+    transition: opacity .5s;
 }
-.main__about-buttons:hover .accordeon-item{
-    background: url(./images/about1.1.png);
-    background-size: cover;
+.accordeon-item:hover img {
+    opacity: .5;
 }
+.accordeon-item.active img {
+    opacity: .5;
 
-.accordeon-item.active {
-    background: url(./images/about1.png);
-    background-size: cover;
-}
-
-.main__about-buttons:hover .accordeon-item.active{
-    background: url(./images/about1.png);
-    background-size: cover;
-}
-.accordeon-item.active:hover{
-    background: url(./images/about1.png);
-    background-size: cover;
 }
 .accordeon-item.active >  .main__about-button{
     opacity: 0;
@@ -880,15 +865,24 @@ span.close svg {
 
 
 .accordeon-title{
-    display: none;
+    opacity: 0;
+    transition: opacity .5s;
+    top: 0;
+    position: absolute;
 }
 .accordeon-base{
     display: none;
     background: url(./images/aboutBg.png) no-repeat left top;
     background-size: contain;
 }
-.active{
+.accordeon-base.active  {
     display: flex;
+}
+.accordeon-title.active{
+    display: flex;
+    opacity: 1;
+    transition: .5s;
+    position: static;
 }
 footer{
     display: flex;
@@ -909,15 +903,18 @@ footer{
 }
 .footer__menu {
     display: flex;
+    flex: 0 0 70%;
 }
 .footer__menu-link {
     align-items: center;
+    width: 100%;
     display: flex;
+    justify-content: space-between;
 }
 .footer__menu-link a{
     color: #FFFFFF;
     text-decoration: none;
-    padding-left: 55px;
+    /* padding-left: 55px; */
     font-size: 40px;
     font-weight: 250;
     line-height: 24px;
@@ -1026,7 +1023,7 @@ a.footer__menu-button-img:hover circle {
         padding-left: 50px;
         border-bottom: 1px solid;
         position: relative;
-        bottom: 50px;
+        /* bottom: 50px; */
         pointer-events: none;
     }
     .main__default-text{
@@ -1220,7 +1217,7 @@ a.footer__menu-button-img:hover circle {
         line-height: 46px;
         width: 100%;
     }
-    .main__img-1.__active .block__crenge-title {
+    /* .main__img-1.__active .block__crenge-title {
         bottom: 110px;
     }
     .main__img-3.__active .block__crenge-title {
@@ -1228,7 +1225,7 @@ a.footer__menu-button-img:hover circle {
     }
     .main__img-4.__active .block__crenge-title {
         bottom: 100px;
-    }
+    } */
     .main__about-buttons {
         width: 50%;
         font-size: 28px;
@@ -1390,7 +1387,7 @@ a.footer__menu-button-img:hover circle {
     } 
     .footer__menu-link a {
         font-size: 14px;
-        padding-left: 30px;
+        /* padding-left: 30px; */
     }
     a.footer__menu-button {
         font-size: 14px;
@@ -1584,7 +1581,7 @@ a.footer__menu-button-img:hover circle {
         font-size: 30px;
     }
     .tab-content__info-title {
-        font-size: 28px;
+        font-size: 24px;
         font-weight: 300;
         line-height: 26px;
         margin-top: -40px;
@@ -1617,6 +1614,9 @@ a.footer__menu-button-img:hover circle {
     .contact__contact-title {
         font-size: 32px;
         line-height: 32px;
+    }
+    .service__page-sliderTitle {
+        font-size: 12px;
     }
     .contact__contact-link {
         font-size: 14px;
@@ -1706,8 +1706,8 @@ a.footer__menu-button-img:hover circle {
     }
     .footer__menu-link {
         padding-right: 0px;
-        display: grid;
-        grid-template-columns: auto auto;
+        display: flex;
+        flex-wrap: wrap;
         
     }
     .footer__menu-link a{
@@ -1724,15 +1724,50 @@ a.footer__menu-button-img:hover circle {
     }
     .footer__menu-link a {
         font-size: 14px;
-        padding-left: 0px;
-        padding-right: 30px;
+        /* padding-left: 0px; */
+        /* padding-right: 30px; */
     }
 }
 
-
+.block__crenge-link-two {
+    display: none;
+}
 @media (max-width:720px){
     header {
         padding: 0px 20px;
+    }
+    .block__crenge-title {
+        display: none;
+    }
+    .block__crenge-link {
+        display: none;
+    }
+    .block__crenge-content {
+        justify-content: flex-end;
+        align-items: flex-end;
+        height: 80%;
+    }
+    .main__img {
+        padding: 0 10px;
+    }
+    .main__img-1 {
+        margin-bottom: 10px;
+    }
+    .block__crenge-link-two {
+        display: none;
+        font-family: 'Gilroy-Regular', sans-serif;
+        font-size: 36px;
+        font-weight: 400;
+        text-align: right;
+        letter-spacing: 0em;
+        color: #fff;
+        padding-left: 50px;
+        border-bottom: 1px solid;
+        position: relative;
+        font-size: 14px;
+    }
+    .block__crenge-link-two {
+        display: block;
     }
     .main__about {
         padding: 20px 20px;
@@ -1755,10 +1790,10 @@ a.footer__menu-button-img:hover circle {
     }
     .service__page-info {
         width: 100%;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 20px;
     }
-    .service__page-title {
+    .service__page-title { 
         font-size: 32px;
         font-weight: 300;
         line-height: 35px;
@@ -1766,6 +1801,9 @@ a.footer__menu-button-img:hover circle {
     }
     .service__page-info{
         padding: 12px 20px 22px;
+    }
+    .main__pages-homes-title {
+        font-size: 24px;
     }
     .main__service-slider {
         padding: 0px 20px;
@@ -1796,9 +1834,9 @@ a.footer__menu-button-img:hover circle {
         padding-bottom: 25px;
     }
     .red__button {
-        font-size: 20px;
+        font-size: 16px;
         width: 100%;
-        padding: 20px 0px;
+        padding: 12px 0px;
     }
     .service__page_tab-content {
         padding: 0px 20px;
@@ -1808,13 +1846,26 @@ a.footer__menu-button-img:hover circle {
         height: 100%;
     }
     .info_link {
-        width: 90%;
+        width: 100%;
+        font-size: 20px;
+        padding: 15px 0;
+    }
+    .modal-dialog {
+        margin: 0;
+    }
+    a.footer__menu-button {
+        padding: 0;
+        margin: 0;
     }
     .contact__contact-social a svg {
         height: 40px;
     }
     .contact__contact-social a {
         padding-right: 15px;
+    }
+    .footer__menu-buttons {
+        flex: 0 0 50%;
+        display: block;
     }
     .contact__team-block {
         padding: 20px 0px;
@@ -1876,18 +1927,21 @@ a.footer__menu-button-img:hover circle {
         padding-top: 40px;
     }
     .footer__menu-link a {
-        font-size: 9px;
-        padding-left: 0px;
-        padding-right: 25px;
+        font-size: 10px;
+        flex: 0 0 50%;
     }
     .footer__menu-button {
         padding: 0px;
     }
+    span.main__pages-info_text {
+        font-size: 16px;
+    }
     footer {
         padding: 26px 20px;
         width: auto;
-        
+        gap: 15px;
     }
+    
     .footer__info-img img {
         height: 35px;
     }
