@@ -1,12 +1,14 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.contact__team', {
     loop: true,
     slidesPerView: 4,
     spaceBetween: 30,
-    allowTouchMove: false,
+    // allowTouchMove: false,
+    watchOverflow: true,
     breakpoints: {
       0: {
-        slidesPerView:2.5,
+        slidesPerView:2.3,
         slidesPerGroup:1,
+        centeredSlides: true,
        },
       450: {
           slidesPerView:2.5,
@@ -27,9 +29,9 @@ const swiper = new Swiper('.swiper', {
     }
   });
 const swiper2 = new Swiper('.swiper2', {
-    slidesPerView: 4,
     slidesPerGroup: 1,
     spaceBetween: 30,
+    allowTouchMove: false,
     navigation: {
       nextEl: ".custom-next",
     },
@@ -37,23 +39,18 @@ const swiper2 = new Swiper('.swiper2', {
     breakpoints: {
       0: {
         slidesPerView:2.5,
-        slidesPerGroup:1,
        },
       450: {
           slidesPerView:2.5,
-          slidesPerGroup: 1,
       },
       720: {
           slidesPerView: 3,
-          slidesPerGroup: 1,
       },
       990: {
           slidesPerView: 4,
-          slidesPerGroup: 1,
       },
       1250: {
           slidesPerView: 4,
-          slidesPerGroup: 1,
       },
     },
 
@@ -134,7 +131,27 @@ wrapperImgs.forEach(function(wrapperImg) {
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  const blockCrenge = document.querySelectorAll(".block__crenge")
+  blockCrenge.forEach(element => {
+    element.addEventListener("mouseenter", function (e) {
+      blockCrenge.forEach(element => {
+          element.classList.add("__small")
+        // }
+      })
+      e.target.classList.add("__active")
+    });
+  });
+  blockCrenge.forEach(element => {
+    element.addEventListener("mouseleave", function (e) {
+      blockCrenge.forEach(element => {
+          element.classList.remove("__small")
+      })
+      e.target.classList.remove("__active")
+    });
+  });
 
+});
 
 
 
