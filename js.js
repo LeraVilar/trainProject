@@ -167,6 +167,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+const serviceSlides = document.querySelectorAll('.service__page-wrapper')
+const serviceContent = document.querySelector('#myTabContent')
 
+serviceSlides.forEach(e => {
+  e.addEventListener('click', function() {
+    serviceContent.scrollIntoView()
+  })
+})
 
 
