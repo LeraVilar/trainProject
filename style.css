@@ -83,6 +83,7 @@ main {
     flex-grow: 1;
     padding-bottom: 0px;
     position: relative;
+    overflow: hidden;
 }
 .main__img{
     display: flex;
@@ -337,6 +338,7 @@ span.main__pages-info_text {
     padding: 19px 0px;
     width: 400px;
     text-align: center;
+    transition: .5s;
 }
 .main__pages-info_images {
     width: 45%;
@@ -695,8 +697,12 @@ img.contact__team-item_img.actives {
 .red__button:hover{
     background: #C50008;
     color: #FFFFFF;
-    transition: 1s;
     border: 1px solid#c5000700;
+}
+.info_link:hover {
+    background: #C50008;
+    color: #FFFFFF;
+    border: 3px solid#c5000700;
 }
 .main__about{
     padding: 140px 70px;
@@ -869,6 +875,7 @@ span.close svg {
     transition: opacity .5s;
     top: 0;
     position: absolute;
+    pointer-events: none;
 }
 .accordeon-base{
     display: none;
@@ -883,6 +890,7 @@ span.close svg {
     opacity: 1;
     transition: .5s;
     position: static;
+    pointer-events: all;
 }
 footer{
     display: flex;
