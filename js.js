@@ -1,9 +1,16 @@
 const swiper = new Swiper('.contact__team', {
-    loop: true,
-    slidesPerView: 4,
-    spaceBetween: 20,
-    allowTouchMove: false,
-    watchOverflow: true,
+    // loop: true,
+    slidesPerView: 4.5,
+    spaceBetween: 30,
+    // loopAdditionalSlides: 10,
+    // effect: 'coverflow',
+    // watchOverflow: true,
+    // coverflowEffect: {
+    //   rotate: 0,
+    //   slideShadows: false,
+    //   depth: 500,
+    //   stretch: -50,
+    // },
     navigation: {
       nextEl: ".custom-next",
     },
@@ -13,6 +20,7 @@ const swiper = new Swiper('.contact__team', {
         slidesPerGroup:1,
         centeredSlides: true,
         spaceBetween: 10,
+        initialSlide: 1,
         allowTouchMove: true,
        },
       450: {
@@ -48,7 +56,7 @@ const swiper2 = new Swiper('.swiper2', {
     loop: true,
     breakpoints: {
       0: {
-        slidesPerView:2.3,
+        slidesPerView:2,
         centeredSlides: true,
         spaceBetween: 12,
        },
@@ -116,30 +124,19 @@ tab();
 
 
 
-let wrapperImgs = document.querySelectorAll(".contact__team-wrapperImg");
+let wrapperImgs = document.querySelectorAll(".contact__team-items");
 
-wrapperImgs.forEach(function(wrapperImg) {
-  wrapperImg.addEventListener("click", function() {
-    // Удаляем классы "active" у всех "contact__team-item_img" и "contact__team-text" во всех "contact__team-items"
-    let items = document.querySelectorAll(".contact__team-item_img, .contact__team-text");
-    items.forEach(function(item) {
-      item.classList.remove("actives");
-    });
-
-    // Получаем родительский блок "contact__team-items" для текущего "contact__team-wrapperImg"
-    let parent = wrapperImg.closest(".contact__team-items");
-
-    // Добавляем класс "active" к "contact__team-item_img" и "contact__team-text" внутри текущего "contact__team-items"
-    let itemImg = parent.querySelector(".contact__team-item_img");
-    let itemText = parent.querySelector(".contact__team-text");
-    if (itemImg && itemText) {
-      itemImg.classList.add("actives");
-      itemText.classList.add("actives");
+wrapperImgs.forEach(el => {
+  el.addEventListener("click", function(e) {
+    console.log(e.target.classList.contains('__active'))
+    if(!el.classList.contains('__active')) {
+      wrapperImgs.forEach(el => {el.classList.remove('__active')})
+      el.classList.add('__active')
+    }else {
+      el.classList.remove('__active')
     }
-  });
-});
-
-
+  })
+})
 
 
 
@@ -177,3 +174,12 @@ serviceSlides.forEach(e => {
 })
 
 
+ymaps.ready(init);
+    function init(){ 
+        // Creating the map.    
+        var myMap = new ymaps.Map("map", {
+            controls: [],
+            center: [55.76, 37.64],
+            zoom: 12
+        });
+    }
