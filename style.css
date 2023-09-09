@@ -761,7 +761,7 @@ img.contact__team-item_img {
     align-items: center;
     display: flex;
     justify-content: center;
-    border-image: url(/images/border.png) 96 / 135px / 77px;
+    border-image: url(./images/border.png) 96 / 135px / 77px;
     cursor: pointer;
     position: relative;
     background: #191919;
@@ -1218,7 +1218,7 @@ a.footer__menu-button-img:hover circle {
         align-items: center;
         display: flex;
         justify-content: center;
-        border-image: url(/images/border.png) 96 / 77px / 33px;
+        border-image: url(./images/border.png) 96 / 77px / 33px;
         cursor: pointer;
     }
     .main__pages-homes_info{
@@ -1614,7 +1614,7 @@ a.footer__menu-button-img:hover circle {
         align-items: center;
         display: flex;
         justify-content: center;
-        border-image: url(/images/border.png) 96 / 54px / 33px;
+        border-image: url(./images/border.png) 96 / 54px / 33px;
         font-size: 14px;
         line-height: 17px;
     }
