@@ -143,7 +143,7 @@ main {
     background: url(./images/parts-img4.jpg) 100% 100% / 100% 100%  no-repeat;
 }
 .block__crenge {
-    height: 74vh;
+    height: 85vh;
     position: relative;
 }
 .block__crenge-content {
@@ -209,14 +209,13 @@ main {
     font-family: 'Gilroy-Regular', sans-serif;
     font-size: 72px;
     font-weight: 400;
-    line-height: 94px;
+    /* line-height: 94px; */
     letter-spacing: 0em;
     text-align: left;
     color: #fff;
     padding-left: 50px;
     border-bottom: 1px solid;
     position: relative;
-    /* bottom: 50px; */
     pointer-events: none;
 }
 .main__default-text{
@@ -426,7 +425,6 @@ img.contact__team-item_img {
 }
 .contact__team-items {
     transition: .5s;
-    /* margin: 0 30px; */
 }
 .contact__team-items.__active {
     margin: 0 20px 0 50px;
@@ -655,7 +653,6 @@ img.contact__team-item_img {
     font-family: 'Gilroy-Light', sans-serif;
     font-size: 110px;
     font-weight: 300;
-    /* line-height: 132px; */
     letter-spacing: 0em;
     margin: 0 0 30px;
     gap: 20px;
@@ -896,7 +893,6 @@ footer{
 .footer__menu-link a{
     color: #FFFFFF;
     text-decoration: none;
-    /* padding-left: 55px; */
     font-size: 40px;
     font-weight: 250;
     line-height: 24px;
@@ -981,7 +977,7 @@ a.footer__menu-button-img:hover circle {
 
 @media (max-width:1950px){
     .block__crenge {
-        height: 68vh;
+        height: 85vh;
     }   
     .block__crenge-title {
         font-family: 'Gilroy-Light', sans-serif;
@@ -998,14 +994,13 @@ a.footer__menu-button-img:hover circle {
         font-family: 'Gilroy-Regular', sans-serif;
         font-size: 36px;
         font-weight: 400;
-        line-height: 47px;
+        /* line-height: 47px; */
         letter-spacing: 0em;
         text-align: left;
         color: #fff;
         padding-left: 50px;
         border-bottom: 1px solid;
         position: relative;
-        /* bottom: 50px; */
         pointer-events: none;
     }
     .main__default-text{
@@ -1016,9 +1011,7 @@ a.footer__menu-button-img:hover circle {
         line-height: 38px;
         letter-spacing: 0em;
         color: #fff;
-        /* padding: 0px 70px; */
         position: absolute;
-        /* bottom: 230px; */
     }
     .main__default-title{
         font-family: 'Gilroy-Light', sans-serif;
@@ -1038,7 +1031,6 @@ a.footer__menu-button-img:hover circle {
     .tab-content__info-title {
         font-size: 55px;
         font-weight: 300;
-        /* line-height: 66px; */
     }
     .tab-content__info-info{
         font-size: 38px;
@@ -1192,7 +1184,7 @@ a.footer__menu-button-img:hover circle {
         padding-left: 30px;
     }
     .block__crenge {
-        height: 68vh;
+        height: 85vh;
     }
     .block__crenge-title {
         font-size: 40px;
@@ -1345,7 +1337,6 @@ a.footer__menu-button-img:hover circle {
     } 
     .footer__menu-link a {
         font-size: 14px;
-        /* padding-left: 30px; */
     }
     a.footer__menu-button {
         font-size: 14px;
@@ -1460,25 +1451,21 @@ a.footer__menu-button-img:hover circle {
     }
     .main__img-1.__active{
         width: 100%;
-        /* background: url(./images/parts-img1.jpg) 100% 100% / 100% 100% no-repeat; */
         height: 195px;
         margin-bottom: 15px;
     }
     .main__img-2.__active{
         width: 100%;
-        /* background: url(./images/parts-img1.jpg) 100% 100% / 100% 100% no-repeat; */
         height: 195px;
         margin-bottom: 15px;
     }
     .main__img-3.__active{
         width: 100%;
-        /* background: url(./images/parts-img1.jpg) 100% 100% / 100% 100% no-repeat; */
         height: 195px;
         margin-bottom: 15px;
     }
     .main__img-4.__active{
         width: 100%;
-        /* background: url(./images/parts-img1.jpg) 100% 100% / 100% 100% no-repeat; */
         height: 195px;
         margin-bottom: 15px;
     }
@@ -1674,8 +1661,6 @@ a.footer__menu-button-img:hover circle {
     }
     .footer__menu-link a {
         font-size: 14px;
-        /* padding-left: 0px; */
-        /* padding-right: 30px; */
     }
 }
 
