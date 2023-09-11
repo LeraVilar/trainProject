@@ -46,8 +46,8 @@ const swiper = new Swiper('.contact__team', {
     }
   });
 const swiper2 = new Swiper('.swiper2', {
-    slidesPerGroup: 2,
-    speed: 1000,
+
+    speed: 800,
     spaceBetween: 30,
     loop: true,
     navigation: {
@@ -58,6 +58,7 @@ const swiper2 = new Swiper('.swiper2', {
         slidesPerView:2,
         centeredSlides: true,
         spaceBetween: 12,
+        slidesPerGroup: 1,
        },
       450: {
           slidesPerView:2,
@@ -69,14 +70,11 @@ const swiper2 = new Swiper('.swiper2', {
           slidesPerView: 4,
       },
       1250: {
-        effect: 'ease',
-        freeMode: true,
         loopFillGroupWithBlank: true,
         slidesPerView: 4,
         loopAdditionalSlides: 10,
-        slidesPerView: 4,
         allowTouchMove: false,
-
+        slidesPerGroup: 2,
       },
     },
 

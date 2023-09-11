@@ -1928,6 +1928,6 @@ a.footer__menu-button-img:hover circle {
     -webkit-filter: grayscale(100%);
 }
 
-.swiper-free-mode>.swiper-wrapper {
-    transition-timing-function: cubic-bezier(0.19, 1.09, 0.88, 0.79);
+.swiper2>.swiper-wrapper {
+    transition-timing-function: cubic-bezier(0.35, 1.00, 1, 0.60);
 }
