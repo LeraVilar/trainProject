@@ -1,8 +1,8 @@
 const swiper = new Swiper('.contact__team', {
-    // loop: true,
+    loop: true,
     slidesPerView: 4.5,
     spaceBetween: 30,
-    // loopAdditionalSlides: 10,
+    loopAdditionalSlides: 10,
     // effect: 'coverflow',
     // watchOverflow: true,
     // coverflowEffect: {
@@ -46,14 +46,19 @@ const swiper = new Swiper('.contact__team', {
     }
   });
 const swiper2 = new Swiper('.swiper2', {
-    slidesPerGroup: 1,
+    slidesPerGroup: 2,
+    speed: 1000,
     spaceBetween: 30,
+    freeMode: true,
+    loopFillGroupWithBlank: true,
+    slidesPerView: 4,
+    loopAdditionalSlides: 10,
+    effect: 'ease',
+    loop: true,
     allowTouchMove: false,
-    watchOverflow: true,
     navigation: {
       nextEl: ".custom-next",
     },
-    loop: true,
     breakpoints: {
       0: {
         slidesPerView:2,
