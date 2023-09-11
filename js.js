@@ -49,13 +49,7 @@ const swiper2 = new Swiper('.swiper2', {
     slidesPerGroup: 2,
     speed: 1000,
     spaceBetween: 30,
-    freeMode: true,
-    loopFillGroupWithBlank: true,
-    slidesPerView: 4,
-    loopAdditionalSlides: 10,
-    effect: 'ease',
     loop: true,
-    allowTouchMove: false,
     navigation: {
       nextEl: ".custom-next",
     },
@@ -66,7 +60,7 @@ const swiper2 = new Swiper('.swiper2', {
         spaceBetween: 12,
        },
       450: {
-          slidesPerView:2.5,
+          slidesPerView:2,
       },
       720: {
           slidesPerView: 3,
@@ -75,7 +69,14 @@ const swiper2 = new Swiper('.swiper2', {
           slidesPerView: 4,
       },
       1250: {
-          slidesPerView: 4,
+        effect: 'ease',
+        freeMode: true,
+        loopFillGroupWithBlank: true,
+        slidesPerView: 4,
+        loopAdditionalSlides: 10,
+        slidesPerView: 4,
+        allowTouchMove: false,
+
       },
     },
 
@@ -177,6 +178,39 @@ serviceSlides.forEach(e => {
     serviceContent.scrollIntoView()
   })
 })
+
+
+
+
+
+const bg = document.querySelector('.main__pages-homes')
+const txt = document.querySelector('.main__pages-homesWrapper')
+
+document.addEventListener('scroll', function() {
+  if(window.innerWidth < 560) {
+    const sizeBG = 155 + (window.scrollY/50)
+    const sizeTxt = 0 - (window.scrollY/8)
+    bg.style.backgroundSize = sizeBG + '%'
+    txt.style.marginBottom = sizeTxt + 'px'
+  }else {
+    const sizeBG = 101 + (window.scrollY/70)
+    const sizeTxt = 0 - (window.scrollY/3.5)
+    bg.style.backgroundSize = sizeBG + '%'
+    txt.style.marginBottom = sizeTxt + 'px'
+  }
+})
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ymaps.ready(init);
