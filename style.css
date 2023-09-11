@@ -1465,25 +1465,25 @@ a.footer__menu-button-img:hover circle {
     }
     .main__img-1.__active{
         width: 100%;
-        background: url(./images/parts-img1.jpg) 100% 100% / 100% 100% no-repeat;
+        /* background: url(./images/parts-img1.jpg) 100% 100% / 100% 100% no-repeat; */
         height: 195px;
         margin-bottom: 15px;
     }
     .main__img-2.__active{
         width: 100%;
-        background: url(./images/parts-img1.jpg) 100% 100% / 100% 100% no-repeat;
+        /* background: url(./images/parts-img1.jpg) 100% 100% / 100% 100% no-repeat; */
         height: 195px;
         margin-bottom: 15px;
     }
     .main__img-3.__active{
         width: 100%;
-        background: url(./images/parts-img1.jpg) 100% 100% / 100% 100% no-repeat;
+        /* background: url(./images/parts-img1.jpg) 100% 100% / 100% 100% no-repeat; */
         height: 195px;
         margin-bottom: 15px;
     }
     .main__img-4.__active{
         width: 100%;
-        background: url(./images/parts-img1.jpg) 100% 100% / 100% 100% no-repeat;
+        /* background: url(./images/parts-img1.jpg) 100% 100% / 100% 100% no-repeat; */
         height: 195px;
         margin-bottom: 15px;
     }
@@ -1736,6 +1736,15 @@ a.footer__menu-button-img:hover circle {
     }
     .block__crenge-link-two {
         display: block;
+    }
+    .block__crenge-content {
+        pointer-events: all;
+    }
+    .main__pages-info_images {
+        padding-top: 30px;
+    }
+    .main__pages-homes-title {
+        line-height: normal;
     }
     .main__about {
         padding: 0 20px;
