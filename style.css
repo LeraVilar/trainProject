@@ -1267,9 +1267,8 @@ a.footer__menu-button-img:hover circle {
         background-attachment: fixed;
     }
     .tab-content__info-title {
-        font-size: 40px;
+        font-size: 24px;
         font-weight: 300;
-        /* line-height: 66px; */
     }
     .service__page-sliderNumber {
         font-size: 60px;
@@ -1279,10 +1278,6 @@ a.footer__menu-button-img:hover circle {
         flex-direction: column;
         padding: 0px 60px 0px;
         width: 70%;
-    }
-    .tab-content__info-titleNumber {
-        /* font-size: 140px; */
-        /* line-height: 100px; */
     }
     .tab-content__info-info {
         font-size: 24px;
