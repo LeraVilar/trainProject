@@ -186,7 +186,7 @@ const txt = document.querySelector('.main__pages-homesWrapper')
 
 document.addEventListener('scroll', function() {
   if(window.innerWidth < 560) {
-    const sizeBG = 155 + (window.scrollY/50)
+    const sizeBG = 200 + (window.scrollY/50)
     const sizeTxt = 0 - (window.scrollY/8)
     bg.style.backgroundSize = sizeBG + '%'
     txt.style.marginBottom = sizeTxt + 'px'

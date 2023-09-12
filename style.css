@@ -37,22 +37,24 @@ logo {
     align-items: center;
     display: flex;
 }
+logo svg {
+    width: 70%;
+    fill: #FFF;
+}
 .header__menu {
     display: flex;
 }
 .header__menu-link {
     align-items: center;
     display: flex;
-    padding-right: 60px;
+    gap: 4rem
 }
 .header__menu-link a{
     color: #FFFFFF;
     text-decoration: none;
-    padding-left: 70px;
     font-size: 40px;
-    font-weight: 250;
     line-height: 24px;
-    letter-spacing: 0em;
+    font-family: GUL;
     transition: .5s;
 }
 .header__menu-link a:hover{
@@ -73,7 +75,7 @@ logo {
     border: 2px solid #6E55C4;
     color: #6E55C4;
     padding: 16px 47px 15px 46px;
-    margin: 0px 30px 0px 60px;
+    margin: 0px 2rem 0px 4rem;
     transition: .5s;
 }
 .header__menu-button:hover{
@@ -148,7 +150,6 @@ main {
 }
 .block__crenge-content {
     opacity: 0;
-    transition: 0s 0s;
     justify-content: space-between;
     position: absolute;
     width: 100%;
@@ -706,10 +707,11 @@ img.contact__team-item_img {
     padding: 140px 70px;
     color: #fff;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
+    gap: 10%;
 }
 .main__about-info {
-    width: 50%;
+    width: 40%;
     position: relative;
 }
 .main__about-infoContent{
@@ -742,7 +744,7 @@ img.contact__team-item_img {
     justify-content: space-between;
     width: 40%;
     font-size: 40px;
-    font-family: 'Gilroy-Bold', sans-serif;
+    font-family: GSB;
     font-weight: 600;
     line-height: 38px;
     letter-spacing: -0.035em;
@@ -831,12 +833,14 @@ span.close {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 400;
-    line-height: 17px;
-    letter-spacing: 0.135em;
     cursor: pointer;
+    transition: .5s;
 }
 span.close svg {
     padding-right: 10px;
+}
+span.close:hover {
+    background: #5f49a9;
 }
 
 
@@ -875,9 +879,8 @@ footer{
     z-index: 2;
 }
 .footer__info-text {
-    font-family: 'Gilroy-Bold', sans-serif;
+    font-family: GSB;
     display: flex;
-    flex-direction: column;
     padding-top: 15px;
     font-size: 30px;
     font-weight: 600;
@@ -886,13 +889,13 @@ footer{
 }
 .footer__menu {
     display: flex;
-    flex: 0 0 65%;
 }
 .footer__menu-link {
     align-items: center;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    gap: 4rem
 }
 .footer__menu-link a{
     color: #FFFFFF;
@@ -900,7 +903,7 @@ footer{
     font-size: 40px;
     font-weight: 250;
     line-height: 24px;
-    letter-spacing: 0em;
+    font-family: GUL;
     transition: .5s;
 }
 .footer__menu-link a:hover{
@@ -952,29 +955,6 @@ a.footer__menu-button-img:hover circle {
     stroke: #C50008;
     transition: .5s;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1053,7 +1033,6 @@ a.footer__menu-button-img:hover circle {
     }
     .header__menu-link a{
         font-size: 20px;
-        padding-left: 50px;
     }
     .header__menu-button {
         font-size: 20px;
@@ -1113,13 +1092,12 @@ a.footer__menu-button-img:hover circle {
         line-height: 28px;
         letter-spacing: -0.065em;
     }
-
-
     .main__about{
         padding: 70px 70px;
         color: #fff;
         display: flex;
-        justify-content: space-between;
+        justify-content: start;
+        gap: 10%;
     }
     .main__about-info {
         width: 40%;
@@ -1146,15 +1124,15 @@ a.footer__menu-button-img:hover circle {
         padding: 10px;
     }
     .accordeon-item {
-    height: 300px;
-    width: 300px;
-    border-radius: 250px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    border-image: url(./images/border.png) 96 / 96px / 42px;
-    cursor: pointer;
-}
+        height: 300px;
+        width: 300px;
+        border-radius: 250px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        border-image: url(./images/border.png) 96 / 96px / 42px;
+        cursor: pointer;
+    }
     .main__about-buttonsWrapper{
         margin-top: -100px;
         padding-right: 0px;
@@ -1178,21 +1156,16 @@ a.footer__menu-button-img:hover circle {
     .header__menu-button {
         font-size: 15px;
         padding: 10px 20px;
-        margin: 0px 20px 0px 0px;
-    }
-    .header__menu-link {
-        padding-right: 30px;
     }
     .header__menu-link a {
         font-size: 14px;
-        padding-left: 30px;
     }
     .block__crenge {
         height: 85vh;
     }
     .block__crenge-title {
         font-size: 40px;
-        line-height: 46px;
+        line-height: 52px;
         width: 100%;
     }
     .main__about-buttons {
@@ -1212,13 +1185,13 @@ a.footer__menu-button-img:hover circle {
 
 
     .accordeon-item {
-        height: 250px;
-        width: 250px;
-        border-radius: 250px;
+        height: 300px;
+        width: 300px;
+        border-radius: 100%;
         align-items: center;
         display: flex;
         justify-content: center;
-        border-image: url(./images/border.png) 96 / 77px / 33px;
+        border-image: url(./images/border.png) 105 / 100px / 35px;
         cursor: pointer;
     }
     .main__pages-homes_info{
@@ -1321,11 +1294,9 @@ a.footer__menu-button-img:hover circle {
         padding-top: 0px;
     }
     .main__about-buttonsWrapper {
-        margin-top: -50px;
-        padding-right: 0px;
+        padding-right: 70px;
     }
     .main__about-contentTitle {
-        font-size: 38px;
         line-height: 38px;
         padding-bottom: 25px;
     }
@@ -1334,7 +1305,7 @@ a.footer__menu-button-img:hover circle {
 
 
     .footer__info-img img {
-        height: 50px;
+        /* height: 50px; */
     }
     .footer__info-text {
         font-size: 7px;
@@ -1351,7 +1322,10 @@ a.footer__menu-button-img:hover circle {
         height: 40px;
         width: auto;
         padding: 0px 6px;
-    }  
+    } 
+    .block__crenge-link {
+        font-size: 26px;
+    }
     .footer__menu-buttons {
         display: flex;
         align-items: center;
@@ -1398,6 +1372,7 @@ a.footer__menu-button-img:hover circle {
     .header__menu-link.modal-header__menu-link {
         display: flex;
         flex-direction: column;
+        gap: 1rem;
         align-items: start;
     }
     .header__menu-link.modal-header__menu-link a {
@@ -1594,7 +1569,7 @@ a.footer__menu-button-img:hover circle {
         padding-top: 60px;
     }
     .main__about-buttonsWrapper {
-        margin-top: 30px;
+        margin-top: -15px;
         padding-right: 0px;
     }
     .accordeon-item {
@@ -1650,6 +1625,7 @@ a.footer__menu-button-img:hover circle {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
+        gap: 0;
     }
     .footer__menu-link a{
         opacity: 54%;
@@ -1738,7 +1714,7 @@ a.footer__menu-button-img:hover circle {
     }
     .main__pages-homes {
         padding: 0px 20px;
-        min-height: 48vh;
+        min-height: 60vh;
     }
     .main__pages-homes_info {
         padding: 60px 20px 50px 20px;
@@ -1849,8 +1825,11 @@ a.footer__menu-button-img:hover circle {
         display: flex;
         width: 80%;
         margin: auto;
-        padding-top: 60px;
+        padding-top: 10px;
         margin-bottom: 40px;
+    }
+    .footer__info-text {
+        flex-direction: column;
     }
     img.contact__team-item_img.actives {
         transform: translateY(-15px) rotate(-3deg);
