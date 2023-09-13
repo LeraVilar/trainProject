@@ -1,141 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link href="https://fonts.cdnfonts.com/css/gilroy-bold?styles=20876,20877,20878,20879,20880" rel="stylesheet">  
-        <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>       
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">                                           
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">   
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.cdnfonts.com/css/gilroy-bold?styles=20876,20877,20878,20879,20880" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./css/media-large-screen.css">
+  <link rel="stylesheet" href="./css/media-small-screen.css">
 </head>
+
 <body>
-    <header>
-        <logo>
-            <a href="./"><img src="./images/logo.svg" alt=""></a>
-        </logo>
-        <div class="header__menu">
-            <div class="header__menu-decst">
-                <div class="header__menu-link">
-                    <a href="./about.html">О НАС</a>
-                    <a href="./service-page.html">СЕРВИС</a>
-                    <a href="./parts.html">ЗАПЧАСТИ</a>
-                    <a href="#">АРЕНДА</a>
-                    <a href="./contact.html">КОНТАКТЫ</a>
-                </div>
-                <div class="header__menu-buttons">
-                    <a href="" class="header__menu-button">оформить заявку</a>
-                    <a href=""><img src="./images/phone.svg" alt=""></a>
-                </div>
-            </div>
-            <!-- Button trigger modal -->
-            <button type="button" class="button__header" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <header>
+    <logo>
+      <a href="./"><img src="./images/logo.svg" alt=""></a>
+    </logo>
+    <div class="header__menu">
+      <div class="header__menu-decst">
+        <div class="header__menu-link">
+          <a href="./index.html">Главная</a>
+          <a href="./about.html">О НАС</a>
+          <a href="./service-page.html">СЕРВИС</a>
+          <a href="./parts.html" class="active">ЗАПЧАСТИ</a>
+          <a href="#">АРЕНДА</a>
+          <a href="./contact.html">КОНТАКТЫ</a>
+        </div>
+        <div class="header__menu-buttons">
+          <a href="" class="header__menu-button">оформить заявку</a>
+          <a href=""><img src="./images/phone.svg" alt=""></a>
+        </div>
+      </div>
+      <!-- Button trigger modal -->
+      <button type="button" class="button__header" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <svg width="36" height="22" viewBox="0 0 36 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 1H36" stroke="#6E55C4" stroke-width="1.5"/>
                     <path d="M0 11H29" stroke="#6E55C4" stroke-width="1.5"/>
                     <path d="M0 21H22" stroke="#6E55C4" stroke-width="1.5"/>
                 </svg>                    
             </button>
-            
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                <div class="modal-content modal-content__header">
-                    <div class="modal-header">
-                    <button type="button" class="btn-close btn-close__header" data-bs-dismiss="modal" aria-label="Close">
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content modal-content__header">
+            <div class="modal-header">
+              <button type="button" class="btn-close btn-close__header" data-bs-dismiss="modal" aria-label="Close">
                         <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0.692261 21.5059L19.621 0.999763" stroke="#6E55C4" stroke-width="1.5"/>
                         <path d="M1.38727 1.25293L20.316 21.759" stroke="#6E55C4" stroke-width="1.5"/>
                         </svg>
                     </button>
-                    </div>
-                    <div class="modal-body modal-body__header">
-                        <div class="header__menu-link modal-header__menu-link">
-                            <a href="./about.html">О НАС</a>
-                            <a href="./service-page.html">СЕРВИС</a>
-                            <a href="./parts.html">ЗАПЧАСТИ</a>
-                            <a href="#">АРЕНДА</a>
-                            <a href="./contact.html">КОНТАКТЫ</a>
-                        </div>
-                        <div class="header__menu-buttons modal-header__menu-buttons">
-                            <a href="" class="header__menu-button">оформить заявку</a>
-                            <a href=""><img src="./images/phone.svg" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                </div>
             </div>
-        </div>
-    </header>
-    
-    <main class="main__pages-homes main__pages-parts">
-        <div class="main__pages-homesWrapper">
-            <span class="main__pages-homes-title">ЗАПЧАСТИ</span>
-        <!-- <img src="./images/arrowDown.svg" alt="" class="main__pages-homes-img"> -->
-        </div>  
-        
-    </main>
-    <section class="main__pages-homes_info parts">
-        <div class="main__pages-info_content">
-            <div class="main__pages-info_contentText">
-                <span class="main__pages-info_text">
-                    Как единственный официальный правопреемник TRANE в
-                    России, компания Трейн Сервис сохранила поддержку завода-изготовителя в подборе и поставке запасных частей в полном объеме.                  
-                </span>
-                <span class="main__pages-info_text">
-                    Имея уникальную возможность пользоваться полным лицензионным программным обеспечением, наша команда реализует продажу запчасных частей как со склада в Москве, так и под заказ.
-                </span>
-                <a href="#" class="info_link">оформить заявку</a>
-            </div>
-        </div>
-        <div class="main__pages-info_images">
-            <img src="./images/info_images1.png" alt="">
-        </div>
-    </section>
-    <footer>
-        <div class="footer__info">
-            <div class="footer__info-img">
-                <img src="./images/logofooter.svg" alt="">
-            </div>
-            <div class="footer__info-text">
-                <span>Все права защищены, 2023 г.</span>
-                <span>ООО «Трейн сервис»</span>
-            </div>
-        </div>
-        <div class="footer__menu">
-            <div class="footer__menu-link">
-                <a href="#">О НАС</a>
+            <div class="modal-body modal-body__header">
+              <div class="header__menu-link modal-header__menu-link">
+                <a href="./about.html">О НАС</a>
                 <a href="./service-page.html">СЕРВИС</a>
                 <a href="./parts.html">ЗАПЧАСТИ</a>
                 <a href="#">АРЕНДА</a>
                 <a href="./contact.html">КОНТАКТЫ</a>
-                <div class="footer__menu-buttons">
-                   <a href="#" class="footer__menu-button-img">
-                        <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+              </div>
+              <div class="header__menu-buttons modal-header__menu-buttons">
+                <a href="" class="header__menu-button">оформить заявку</a>
+                <a href=""><img src="./images/phone.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main__pages-homes main__pages-parts">
+    <div class="main__pages-homesWrapper">
+      <span class="main__pages-homes-title">ЗАПЧАСТИ</span>
+      <!-- <img src="./images/arrowDown.svg" alt="" class="main__pages-homes-img"> -->
+    </div>
+
+  </main>
+  <section class="main__pages-homes_info parts">
+    <div class="main__pages-info_content">
+      <div class="main__pages-info_contentText">
+        <span class="main__pages-info_text">
+                    Как единственный официальный правопреемник TRANE в
+                    России, компания Трейн Сервис сохранила поддержку завода-изготовителя в подборе и поставке запасных частей в полном объеме.                  
+                </span>
+        <span class="main__pages-info_text">
+                    Имея уникальную возможность пользоваться полным лицензионным программным обеспечением, наша команда реализует продажу запчасных частей как со склада в Москве, так и под заказ.
+                </span>
+        <a href="#" class="info_link">оформить заявку</a>
+      </div>
+    </div>
+    <div class="main__pages-info_images">
+      <img src="./images/info_images1.png" alt="">
+    </div>
+  </section>
+  <footer>
+    <div class="footer__info">
+      <div class="footer__info-img">
+        <img src="./images/logofooter.svg" alt="">
+      </div>
+      <div class="footer__info-text">
+        <span>Все права защищены, 2023 г.</span>
+        <span>ООО «Трейн сервис»</span>
+      </div>
+    </div>
+    <div class="footer__menu">
+      <div class="footer__menu-link">
+        <a href="#">О НАС</a>
+        <a href="./service-page.html">СЕРВИС</a>
+        <a href="./parts.html">ЗАПЧАСТИ</a>
+        <a href="#">АРЕНДА</a>
+        <a href="./contact.html">КОНТАКТЫ</a>
+        <div class="footer__menu-buttons">
+          <a href="#" class="footer__menu-button-img">
+            <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="29" cy="29" r="28" stroke="white" stroke-width="2"/>
                             <path d="M44.947 22.6443C45.1801 21.8951 44.947 21.3457 43.8449 21.3457H40.194C39.265 21.3457 38.8405 21.821 38.6074 22.343C38.6074 22.343 36.7511 26.7236 34.1207 29.564C33.2717 30.3905 32.8838 30.6515 32.4209 30.6515C32.1895 30.6515 31.8532 30.3905 31.8532 29.6413V22.6443C31.8532 21.7453 31.5852 21.3457 30.8111 21.3457H25.0741C24.4948 21.3457 24.1451 21.7614 24.1451 22.1577C24.1451 23.0084 25.4603 23.2049 25.5952 25.6023V30.8029C25.5952 31.942 25.3838 32.1498 24.9176 32.1498C23.6807 32.1498 20.6707 27.7531 18.8843 22.72C18.5364 21.742 18.1851 21.3473 17.2528 21.3473H13.6035C12.5597 21.3473 12.3516 21.8226 12.3516 22.3446C12.3516 23.2823 13.5886 27.9223 18.1135 34.059C21.1302 38.2495 25.3771 40.5212 29.2461 40.5212C31.5652 40.5212 31.8516 40.0169 31.8516 39.1469V35.9794C31.8516 34.9709 32.073 34.7679 32.8072 34.7679C33.3466 34.7679 34.2755 35.0321 36.4415 37.0508C38.9154 39.4449 39.3249 40.5195 40.7151 40.5195H44.3643C45.4065 40.5195 45.9276 40.0153 45.6279 39.0196C45.3 38.0288 44.1179 36.5868 42.5497 34.8807C41.6973 33.9075 40.4237 32.8603 40.0358 32.3367C39.4947 31.6617 39.6512 31.3636 40.0358 30.7643C40.0375 30.7659 44.4842 24.7049 44.947 22.6443Z" fill="white"/>
                             </svg>
-                    </a>
-                    <a href="#" class="footer__menu-button-img">
-                        <svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+          </a>
+          <a href="#" class="footer__menu-button-img">
+            <svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="29.7778" cy="29" r="28" stroke="white" stroke-width="2"/>
                             <path d="M29.7778 21.5135C25.6349 21.5135 22.2913 24.8571 22.2913 29C22.2913 33.143 25.6349 36.4865 29.7778 36.4865C33.9208 36.4865 37.2643 33.143 37.2643 29C37.2643 24.8571 33.9208 21.5135 29.7778 21.5135ZM29.7778 33.8657C27.0986 33.8657 24.9121 31.6792 24.9121 29C24.9121 26.3208 27.0986 24.1343 29.7778 24.1343C32.4571 24.1343 34.6435 26.3208 34.6435 29C34.6435 31.6792 32.4571 33.8657 29.7778 33.8657ZM37.5709 19.4621C36.6037 19.4621 35.8225 20.2432 35.8225 21.2105C35.8225 22.1778 36.6037 22.959 37.5709 22.959C38.5382 22.959 39.3194 22.1815 39.3194 21.2105C39.3197 20.9809 39.2746 20.7534 39.1869 20.5411C39.0991 20.3288 38.9703 20.136 38.8079 19.9736C38.6455 19.8112 38.4526 19.6824 38.2404 19.5946C38.0281 19.5068 37.8006 19.4618 37.5709 19.4621ZM44.3712 29C44.3712 26.9851 44.3895 24.9885 44.2763 22.9772C44.1632 20.6411 43.6302 18.5678 41.922 16.8595C40.21 15.1476 38.1404 14.6183 35.8043 14.5052C33.7894 14.392 31.7927 14.4103 29.7815 14.4103C27.7666 14.4103 25.7699 14.392 23.7587 14.5052C21.4226 14.6183 19.3493 15.1513 17.641 16.8595C15.9291 18.5715 15.3998 20.6411 15.2866 22.9772C15.1735 24.9921 15.1917 26.9888 15.1917 29C15.1917 31.0113 15.1735 33.0116 15.2866 35.0228C15.3998 37.3589 15.9327 39.4322 17.641 41.1405C19.3529 42.8524 21.4226 43.3817 23.7587 43.4949C25.7736 43.608 27.7702 43.5898 29.7815 43.5898C31.7964 43.5898 33.793 43.608 35.8043 43.4949C38.1404 43.3817 40.2137 42.8488 41.922 41.1405C43.6339 39.4286 44.1632 37.3589 44.2763 35.0228C44.3931 33.0116 44.3712 31.0149 44.3712 29ZM41.1591 37.6071C40.8926 38.2715 40.5714 38.7679 40.0567 39.2789C39.542 39.7936 39.0493 40.1148 38.3849 40.3813C36.4649 41.1441 31.9059 40.9726 29.7778 40.9726C27.6498 40.9726 23.0871 41.1441 21.1671 40.3849C20.5027 40.1184 20.0063 39.7972 19.4953 39.2826C18.9806 38.7679 18.6594 38.2751 18.3929 37.6108C17.6337 35.6871 17.8053 31.1281 17.8053 29C17.8053 26.872 17.6337 22.3092 18.3929 20.3893C18.6594 19.7249 18.9806 19.2285 19.4953 18.7175C20.01 18.2064 20.5027 17.8816 21.1671 17.6151C23.0871 16.8559 27.6498 17.0274 29.7778 17.0274C31.9059 17.0274 36.4686 16.8559 38.3886 17.6151C39.0529 17.8816 39.5493 18.2028 40.0604 18.7175C40.575 19.2321 40.8963 19.7249 41.1627 20.3893C41.922 22.3092 41.7504 26.872 41.7504 29C41.7504 31.1281 41.922 35.6871 41.1591 37.6071Z" fill="white"/>
                             </svg>
-                    </a>
-                    <a href="tell:+74957756525" class="footer__menu-button">+7 (495) 775 - 65 - 25</a>
-                </div>
-            </div>
+          </a>
+          <a href="tell:+74957756525" class="footer__menu-button">+7 (495) 775 - 65 - 25</a>
         </div>
-    </footer>
+      </div>
+    </div>
+  </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script src="./js.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="./js.js"></script>
 
 
 </body>
+
 </html>

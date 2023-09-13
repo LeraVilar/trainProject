@@ -1,0 +1,495 @@
+@media (max-width:1950px) {
+  .block__crenge {
+    height: 85vh;
+  }
+
+  .footer__info-rights {
+    background: #FFFFFF59;
+    font-family: "Gilroy";
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 4.6px;
+  }
+
+  .block__crenge-title {
+    font-family: 'Gilroy-Light', sans-serif;
+    font-size: 80px;
+    font-weight: 300;
+    line-height: 104px;
+    letter-spacing: 0em;
+    text-align: left;
+    position: relative;
+    bottom: 0px;
+    width: 70%;
+  }
+
+  .block__crenge-link {
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    /* line-height: 47px; */
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    padding-left: 50px;
+    border-bottom: 1px solid;
+    position: relative;
+    pointer-events: none;
+  }
+
+  .main__default-text {
+    font-family: GSB;
+    flex-direction: column;
+    font-size: 31px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0em;
+    color: #fff;
+    position: absolute;
+  }
+
+  .main__default-title {
+    font-family: 'Gilroy-Light', sans-serif;
+    font-size: 128px;
+    font-weight: 300;
+    line-height: 154px;
+    letter-spacing: 0em;
+  }
+
+  .tab-content__info img {
+    width: 50%;
+    height: 100%;
+  }
+
+  .red__button {
+    font-size: 20px;
+    width: 400px;
+  }
+
+  .tab-content__info-title {
+    font-size: 55px;
+    font-weight: 300;
+  }
+
+  .tab-content__info-info {
+    font-size: 38px;
+    font-weight: 300;
+    line-height: 53px;
+  }
+
+  .custom-next {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 17px;
+  }
+
+  .service__page-sliderTitle {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 31px;
+  }
+
+  .header__menu-link a {
+    font-size: 20px;
+    font-weight: 200;
+  }
+
+  .header__menu-button {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .main__pages-homes-title {
+    font-size: 80px;
+    line-height: 96px;
+  }
+
+  .main__pages-info_contentText {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .footer__info-text {
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  .footer__menu-link a {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .footer__menu-button {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .contact__team-textTitle {
+    font-size: 24px;
+    line-height: 20px;
+  }
+
+  .contact__team-textLink {
+    font-size: 20px;
+  }
+
+  .contact__contact-link {
+    font-size: 25px;
+    line-height: 28px;
+  }
+
+  .contact__contact-adress {
+    font-size: 25px;
+    line-height: 28px;
+  }
+
+  .contact__team-title {
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  .contact__contact-title {
+    font-size: 64px;
+    line-height: 64px;
+  }
+
+  .service__page-title {
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 55px;
+  }
+
+  .service__page-info {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: -0.065em;
+  }
+
+  .main__about {
+    padding: 70px 70px;
+    color: #fff;
+    display: flex;
+    justify-content: start;
+    gap: 10%;
+  }
+
+  .main__about-info {
+    width: 40%;
+  }
+
+  .main__about-infoContent {
+    padding-top: 100px;
+  }
+
+  .main__about-content {
+    padding-bottom: 50px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .main__about-contentTitle {
+    font-size: 64px;
+    line-height: 74px;
+    padding-bottom: 25px;
+  }
+
+  .main__about-buttons {
+    width: 40%;
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .main__about-button {
+    padding: 10px;
+  }
+
+  .accordeon-item {
+    height: 300px;
+    width: 300px;
+    border-radius: 250px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-image: url(../images/border.png) 96 / 96px / 42px;
+    cursor: pointer;
+  }
+
+  .main__about-buttonsWrapper {
+    margin-top: -100px;
+    padding-right: 0px;
+  }
+
+  span.close {
+    padding: 20px 30px;
+    width: 200px;
+    font-size: 20px;
+    line-height: 17px;
+  }
+}
+
+@media (max-width:1850px) {
+  .block__crenge-title {
+    font-size: 80px;
+  }
+}
+
+@media (max-width:1550px) {
+  logo img {
+    max-width: 167px;
+  }
+
+  .footer__logo {
+    width: 198px;
+  }
+
+  .main__about-content {
+    margin-left: 25px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  header {
+    padding: 20px 40px;
+  }
+
+  .header__menu-button {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+
+  .header__menu-link a {
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 18px;
+  }
+
+  .block__crenge {
+    height: 85vh;
+  }
+
+  .block__crenge-title {
+    font-size: 40px;
+    line-height: 52px;
+    width: 100%;
+  }
+
+  .main__about-buttons {
+
+    width: 50%;
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .main__default-title {
+    font-size: 90px;
+    line-height: 108px;
+  }
+
+  .main__default-text {
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  .accordeon-item {
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-image: url(../images/border.png) 105 / 100px / 35px;
+    cursor: pointer;
+  }
+
+  .main__pages-homes_info {
+    align-items: center;
+  }
+
+  .header__menu-buttons img {
+    height: 38px;
+  }
+
+  .main__pages-homes-title {
+    font-size: 65px;
+  }
+
+  .main__pages-homesWrapper {
+    padding-bottom: 160px;
+  }
+
+  .main__pages-info_content {
+    width: 40%;
+  }
+
+  .main__pages-info_contentText {
+    font-size: 24px;
+  }
+
+  .main__pages-info_images {
+    width: 50%;
+  }
+
+  .main__pages-parts {
+    background: url(../images/parts-imgAdapt1.jpg) no-repeat center;
+    background-size: 101%;
+    /* background-attachment: fixed; */
+  }
+
+  .main__pages-bigrepair {
+    background: url(../images/parts-imgAdapt2.jpg) no-repeat center;
+    background-size: 101%;
+    /* background-attachment: fixed; */
+  }
+
+  .main__pages-diagnosti {
+    background: url(../images/parts-imgAdapt3.jpg) no-repeat center;
+    background-size: 101%;
+    /* background-attachment: fixed; */
+  }
+
+  .main__pages-service {
+    background: url(../images/parts-imgAdapt4.jpg) no-repeat center;
+    background-size: 101%;
+    /* background-attachment: fixed; */
+  }
+
+  .tab-content__info-title {
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  .service__page-sliderNumber {
+    font-size: 60px;
+  }
+
+  .tab-content__info-text {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 60px 0px;
+    width: 70%;
+  }
+
+  .tab-content__info-info {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 35px;
+  }
+
+  .tab-content__info-info {
+    padding: 15px 0px;
+  }
+
+  .service__page-info {
+    width: 60%;
+  }
+
+  .custom-next {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 17px;
+    padding: 15px 15px;
+    right: -40px;
+  }
+
+  .service__page-sliderTitle {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 31px;
+    width: 100%;
+  }
+
+  .swiper2.swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .contact__team-text {
+    padding: 30px 10px 50px;
+    width: 80%;
+  }
+
+  .contact__team-textTitle {
+    font-size: 18px;
+    line-height: 1px;
+  }
+
+  .contact__team-textLink {
+    font-size: 14px;
+  }
+
+  .main__about-buttons {
+    justify-content: inherit;
+  }
+
+  .main__about-infoContent {
+    padding-top: 0px;
+  }
+
+  .main__about-buttonsWrapper {
+    padding-right: 70px;
+  }
+
+  .main__about-contentTitle {
+    line-height: 38px;
+    padding-bottom: 28px;
+    margin-top: 130px;
+    margin-left: 25px;
+  }
+
+  .footer__info-text {
+    font-size: 7px;
+  }
+
+  .footer__menu-link a {
+    font-size: 14px;
+  }
+
+  a.footer__menu-button {
+    font-size: 14px;
+    padding: 10px 20px;
+    margin: 0px 0px 0px 10px;
+  }
+
+  .footer__menu-buttons img {
+    height: 40px;
+    width: auto;
+    padding: 0px 6px;
+  }
+
+  .block__crenge-link {
+    font-size: 26px;
+  }
+
+  .footer__menu-buttons {
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+  }
+
+  .footer__menu-buttons svg {
+    height: 45px;
+  }
+
+  a.footer__menu-button-img {
+    padding: 0px 0px;
+    padding-left: 10px;
+    transition: .5s;
+  }
+}
+
+@media (max-width:1250px) {
+  .contact__team-textTitle {
+    font-size: 13px;
+  }
+
+  .contact__team-textLink {
+    font-size: 13px;
+  }
+}
+
+@media (max-width:1100px) {
+  .footer__menu-button-img {
+    display: none;
+  }
+}
